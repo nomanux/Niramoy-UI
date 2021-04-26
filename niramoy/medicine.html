@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- <title>Responsive Navigation Bar - W3jar.Com</title> -->
+      <title>Home</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="../niramoy/font/font.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link rel="stylesheet" href="../niramoy/css/tempusdominus-bootstrap-4.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <script src="../niramoy/js/tempusdominus-bootstrap-4.js"></script>
+   </head>
+   <body>
+      <!-- =========navbar start==========   -->
+      <div class="nav_div">
+         <nav class="navbar  navbar-expand-lg navbar-dark  navbar_theme_color">
+            <img src="../niramoy/image/logo.png" width="35px" height="35px"  alt="Niramoy">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item active">
+                         <a class="nav-link" href="../niramoy/homepage.html"> Prescription  <span class="sr-only">(current)</span></a>
+                        
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" href="../niramoy/appointment.html">Appointment</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="../niramoy/user.html" class="nav-link">Patient Profile</a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" href="../niramoy/medicine.html">Add medicine</a>
+                    </li>
+                    
+
+
+                    
+                    <li class="nav-item ml-auto">
+                     <!-- <span class="nav-link text-light font-weight-bold">Version 1.0.1
+                       <span class="badge badge-dark">121 Days left</span>
+                     </span> -->
+                     <span class="nav-link text-light font-weight-bold">Trial Version
+                       <span class="badge badge-dark">180
+                          Days left</span>
+                     </span>
+                   </li>
+                   
+
+
+                   <li class="nav-item">
+                     <button class="btn btn-sm btn-outline-light my-auto">
+                        <span class="spinner-grow spinner-grow-sm"></span>
+                        Buy subscription!
+                      </button>
+                     
+                     <!-- <button class="btn btn-sm btn-outline-light my-auto" type="button">
+                        <i class="fa fa-cog fa-spin"></i>
+                        Buy subscription!
+                      </button> -->
+
+                   </li>
+
+
+
+
+
+
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle  fa-lg"></i>  Dr. Tayeba habib Siza </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Edit Profile</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+      <!-- =========navbar end========== -->
+      <div class="container-fluid edit_top_body px-xs-0 pt-2">
+         <!-- ================= Main Prescription Holder========================= -->
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col">
+                  <button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus-circle text-light"></i> New Patient
+                  <!-- </button>
+                  <button class="btn btn-sm btn-light " type="button" data-toggle="modal" data-target="#exampleexixtingModal"><i class="fa fa-plus-circle text-dark"></i> Exixting Patient
+                  </button > -->
+               </div>
+
+               <div class="col d-none d-md-block">
+                  <h5 class="font-weight-bold text-theme-blue mb-0 mt-1 pb-0 text-center">Prescription</h5>
+               </div>
+
+
+               <div class="col  text-right">
+                  <div class="dropdown">
+                     <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                     Prescription Template
+                     </button>
+                     <div class="dropdown-menu w47">
+                        <a class="dropdown-item" href="#">Fever</a>
+                        <a class="dropdown-item" href="#">Dengue</a>
+                        <a class="dropdown-item" href="#">Fever</a>
+                        <a class="dropdown-item" href="#">Dengue</a>
+                     </div>
+                  </div>
+               </div>
+           </div>
+         </div>
+
+         <hr>
+
+         <!-- Shurjer hashi HealthCare Center -->
+         <div class="d-none d-md-block">
+            <div class="row">
+               <div class="col">
+                  <div class="py-1 pl-3">
+                     <p  class="text-secondary font-weight-bold my-0">Shurjer hashi HealthCare Center</p>
+                     <small class="text-muted">245, Tejgaon, Industrial Area, <br>
+                        Dhaka - 1208, Bangladesh.
+                     </small>
+                  </div>
+               </div>
+               <div class="col text-right">
+                  <div class=" text-right py-1 pr-3">
+                     <p class=" font-weight-bold text-theme-green my-0">Asst. Prf. Dr.Tayeba Habib Shiza</p>
+                     <small class="text-muted "><font class=""> Cardiologist </font> MBBS(BD), MCPS, FCPS(UK) <br>
+                        Shaheed Suhrawardy medical college, Dhaka
+                     </small>
+                  </div>
+               </div>
+         </div>
+         </div>
+
+
+         <hr class="bg-secondary">
+
+         <!-- click here view patient info -->
+         <div class="d-block d-sm-none ">
+            <div class="container-fluid ">
+               <button type="button" class="btn btn-success btn-block btn-sm text-left " data-toggle="collapse" data-target="#demo"><i class="fa fa-chevron-down pull-right"></i><i class="fa fa-user" aria-hidden="true"></i> Click here for <font class="">Patient details</font></button>
+               <div id="demo" class="collapse pt-2">
+
+
+                  <ul class="list-group">
+                     <li class="list-group-item p-2"><small>Name: <button class="btn btn-primary-outline btn-sm"><i class="fa fa-search fa-1x"></i></button>: <font class="text-deep-blue font-weight-bold">Abdullah Al Noman</font></small>
+                     </li>
+
+                     <li class="list-group-item p-2">
+                        <small>
+                           <div class="row">
+                              <div class="col border-right">Gender: <font class="text-deep-blue font-weight-bold">Male</font></div>
+                              <div class="col">Age: <font class="text-deep-blue font-weight-bold">45</font></div>
+                           </div>
+                        </small>
+                     </li>
+                     
+
+                     <li class="list-group-item p-2"> 
+                        <div class="row">
+                           <div class="col-4"><small>Last visited:</small></div>
+                           <div class="col">
+                              <div class="form-group mb-0">  
+                              <select class="form-control input-sm py-0" id="exampleFormControlSelect1">
+                                <option>01-09-2019</option>
+                                <option>12-02-2019</option>
+                                <option>05-01-2019</option>
+                              </select>
+                            </div></div>
+                        </div>
+
+
+
+
+
+                     </li>
+                   </ul>
+
+               </div>
+             </div>
+         </div>
+         <!-- desktop patient view -->
+         <div class="d-none d-md-block" >
+            <div class="row">
+               <div class="col">
+                  <table class="table patient_info_table ">
+                     <tbody>
+                        <tr class="table-head" >
+                           <td class="font-weight-bold edit_width31 py-1">
+                              <font class="info_left">Name:</font>                   
+                              <button class="btn btn-primary-outline btn-sm"><i class="fa fa-search fa-1x"></i></button>: 
+                              <p class="d-inline" ></p>
+                           </td>
+                           
+                           
+                           <td class="font-weight-bold py-1"> <font  class="info_left">Gender:            </font> Male</td>
+                           <td class="font-weight-bold py-1"> <font  class="info_left">Age:               </font> &nbsp; 45</td>
+                           <td class="font-weight-bold py-1"> <font  class="info_left">Phone :            </font> +8801710000000</td>
+                           <!-- <td class="font-weight-bold"> <font  class="info_left">Date :             </font> 01.07.2019</td>
+                           <td class="font-weight-bold"> <font  class="info_left">Prescription No.:  </font> 1029</td> -->
+                           <td class="font-weight-bold py-1" class="dropdown edit_pointer" >
+                              <!-- <p class="dropdown-toggle edit_margin31 py-1"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Last Visited
+                              </p>
+                              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                 <a class="dropdown-item" href="#">01-09-2019</a>
+                                 <a class="dropdown-item" href="#">12-02-2019</a>
+                                 <a class="dropdown-item" href="#">05-01-2019</a>
+                              </div> -->
+                              <div class="dropdown show">
+                                 <a class="btn btn-light btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Last Visited
+                                 </a>
+                               
+                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item py-0" href="#">01-09-2019</a>
+                                    <a class="dropdown-item py-0" href="#">12-02-2019</a>
+                                    <a class="dropdown-item py-0" href="#">05-01-2019</a>
+                                 </div>
+                               </div>
+                           </td>
+                           </t>
+                     </tbody>
+                  </table>
+   
+               </div>
+               
+            </div>
+
+         </div >
+         
+
+         <hr class="bg-secondary">
+<!-- 
+        <div class="container-fluid">
+         <div class="row">
+            <div class="col">
+                  <div class="footer">
+                     <div class=" text-center  py-3 border-top">
+                        <div class="btn-group mr-2 mb-2" role="group" aria-label="First group">
+         
+                           <button type="button" class="btn btn-secondary btn-sm">&nbsp; <i class="fa fa-file-text-o" aria-hidden="true"></i> Save as Template &nbsp;</button>
+                        </div>
+         
+                        <div class="btn-group mr-2 mb-2" role="group" aria-label="Second group">
+                           <button type="button" class="btn btn-dark btn-sm">&nbsp; <i class="fa fa-floppy-o" aria-hidden="true"></i> Save Prescription &nbsp;</button>
+                         </div>
+         
+                         <div class="btn-group mb-2" role="group" aria-label="Third group">
+                           <button type="button" class="btn btn-primary btn-save-print btn-sm">&nbsp; <i class="fa fa-print" aria-hidden="true"></i> Save and Print&nbsp;</button>
+                         </div>
+                     </div>
+                  </div>
+            </div>
+         </div>
+        </div> -->
+        
+         
+      </div>
+      <!-- ================= container fluid end========================= -->
+   </body>
+</html>
+
+<script>
+  

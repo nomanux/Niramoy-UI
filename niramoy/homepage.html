@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- <title>Responsive Navigation Bar - W3jar.Com</title> -->
+      <title>Home</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="../niramoy/font/font.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link rel="stylesheet" href="../niramoy/css/tempusdominus-bootstrap-4.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <script src="../niramoy/js/tempusdominus-bootstrap-4.js"></script>
+   </head>
+   <body>
+      <!-- =========navbar start==========   -->
+      <div class="nav_div">
+         <nav class="navbar  navbar-expand-lg navbar-dark  navbar_theme_color">
+            <img src="../niramoy/image/logo.png" width="35px" height="35px"  alt="Niramoy">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item active">
+                         <a class="nav-link" href="../niramoy/homepage.html"> Prescription  <span class="sr-only">(current)</span></a>
+                        
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" href="../niramoy/appointment.html">Appointment</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="../niramoy/user.html" class="nav-link">Patient Profile</a>
+                    </li>
+                    <li class="nav-item">
+                     <a class="nav-link" href="../niramoy/medicine.html">Add medicine</a>
+                    </li>
+                    
+
+
+                    
+                    <li class="nav-item ml-auto">
+                     <!-- <span class="nav-link text-light font-weight-bold">Version 1.0.1
+                       <span class="badge badge-dark">121 Days left</span>
+                     </span> -->
+                     <span class="nav-link text-light font-weight-bold">Trial Version
+                       <span class="badge badge-dark">180
+                          Days left</span>
+                     </span>
+                   </li>
+                   
+
+
+                   <li class="nav-item">
+                     <button class="btn btn-sm btn-outline-light my-auto">
+                        <span class="spinner-grow spinner-grow-sm"></span>
+                        Buy subscription!
+                      </button>
+                     
+                     <!-- <button class="btn btn-sm btn-outline-light my-auto" type="button">
+                        <i class="fa fa-cog fa-spin"></i>
+                        Buy subscription!
+                      </button> -->
+
+                   </li>
+
+
+
+
+
+
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle  fa-lg"></i>  Dr. Tayeba habib Siza </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Edit Profile</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+      <!-- =========navbar end========== -->
+      <div class="container-fluid edit_top_body px-xs-0 pt-2">
+         <!-- ================= Main Prescription Holder========================= -->
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col">
+                  <button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus-circle text-light"></i> New Patient
+                  <!-- </button>
+                  <button class="btn btn-sm btn-light " type="button" data-toggle="modal" data-target="#exampleexixtingModal"><i class="fa fa-plus-circle text-dark"></i> Exixting Patient
+                  </button > -->
+               </div>
+
+               <div class="col d-none d-md-block">
+                  <h5 class="font-weight-bold text-theme-blue mb-0 mt-1 pb-0 text-center">Prescription</h5>
+               </div>
+
+
+               <div class="col  text-right">
+                  <div class="dropdown">
+                     <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+                     Prescription Template
+                     </button>
+                     <div class="dropdown-menu w47">
+                        <a class="dropdown-item" href="#">Fever</a>
+                        <a class="dropdown-item" href="#">Dengue</a>
+                        <a class="dropdown-item" href="#">Fever</a>
+                        <a class="dropdown-item" href="#">Dengue</a>
+                     </div>
+                  </div>
+               </div>
+           </div>
+         </div>
+
+         <hr>
+
+         <!-- Shurjer hashi HealthCare Center -->
+         <div class="d-none d-md-block">
+            <div class="row">
+               <div class="col">
+                  <div class="py-1 pl-3">
+                     <p  class="text-secondary font-weight-bold my-0">Shurjer hashi HealthCare Center</p>
+                     <small class="text-muted">245, Tejgaon, Industrial Area, <br>
+                        Dhaka - 1208, Bangladesh.
+                     </small>
+                  </div>
+               </div>
+               <div class="col text-right">
+                  <div class=" text-right py-1 pr-3">
+                     <p class=" font-weight-bold text-theme-green my-0">Asst. Prf. Dr.Tayeba Habib Shiza</p>
+                     <small class="text-muted "><font class=""> Cardiologist </font> MBBS(BD), MCPS, FCPS(UK) <br>
+                        Shaheed Suhrawardy medical college, Dhaka
+                     </small>
+                  </div>
+               </div>
+         </div>
+         </div>
+
+
+         <hr class="bg-secondary">
+
+         <!-- click here view patient info -->
+         <div class="d-block d-sm-none ">
+            <div class="container-fluid ">
+               <button type="button" class="btn btn-success btn-block btn-sm text-left " data-toggle="collapse" data-target="#demo"><i class="fa fa-chevron-down pull-right"></i><i class="fa fa-user" aria-hidden="true"></i> <font class="">&nbsp; Patient Information here</font></button>
+               <div id="demo" class="collapse pt-2">
+
+                  <form>
+                     <div class="input-group mb-3 input-sm">
+                       <input type="text" class="form-control input-sm" placeholder="Search paitent">
+                       <div class="input-group-append ">
+                         <span class="input-group-text input_group_search"> Search</span>
+                       </div>
+                     </div>
+                   </form>
+
+                  <ul class="list-group">
+                     <li class="list-group-item p-2 pl-3"><small>Name: <button class="btn btn-primary-outline btn-sm"><i class="fa fa-search fa-1x"></i></button>: <font class="text-deep-blue font-weight-bold">Abdullah Al Noman</font></small>
+                     </li>
+
+                     <li class="list-group-item p-2 pl-3">
+                        <small>
+                           <div class="row">
+                              <div class="col border-right">Gender: <font class="text-deep-blue font-weight-bold">Male</font></div>
+                              <div class="col">Age: <font class="text-deep-blue font-weight-bold">45</font></div>
+                           </div>
+                        </small>
+                     </li>
+                     
+                     <li class="list-group-item p-2 pl-3"> 
+                        <div class="row">
+                           <div class="col-4"><small>Last visited:</small></div>
+                           <div class="col">
+                              <div class="form-group mb-0">  
+                              <select class="form-control input-sm py-0" id="exampleFormControlSelect1">
+                                <option><small>01-09-2019</small></option>
+                                <option><small>12-02-2019</small></option>
+                                <option><small>05-01-2019</small></option>
+                              </select>
+                            </div></div>
+                        </div>
+                     </li>
+                   </ul>
+
+               </div>
+             </div>
+         </div>
+         <!-- desktop patient view -->
+         <div class="d-none d-md-block" >
+            <div class="row">
+               <div class="col">
+                  <table class="table patient_info_table ">
+                     <tbody>
+                        <tr class="table-head" >
+                           <td class="font-weight-bold edit_width31 py-1">
+                              <font class="info_left">Name:</font>                   
+                              <button class="btn btn-primary-outline btn-sm"><i class="fa fa-search fa-1x"></i></button>: 
+                              <p class="d-inline" ></p>
+                           </td>
+                           
+                           
+                           <td class="font-weight-bold py-1"> <font  class="info_left">Gender:            </font> Male</td>
+                           <td class="font-weight-bold py-1"> <font  class="info_left">Age:               </font> &nbsp; 45</td>
+                           <td class="font-weight-bold py-1"> <font  class="info_left">Phone :            </font> +8801710000000</td>
+                           <!-- <td class="font-weight-bold"> <font  class="info_left">Date :             </font> 01.07.2019</td>
+                           <td class="font-weight-bold"> <font  class="info_left">Prescription No.:  </font> 1029</td> -->
+                           <td class="font-weight-bold py-1" class="dropdown edit_pointer" >
+                              <!-- <p class="dropdown-toggle edit_margin31 py-1"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Last Visited
+                              </p>
+                              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                 <a class="dropdown-item" href="#">01-09-2019</a>
+                                 <a class="dropdown-item" href="#">12-02-2019</a>
+                                 <a class="dropdown-item" href="#">05-01-2019</a>
+                              </div> -->
+                              <div class="dropdown show">
+                                 <a class="btn btn-light btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Last Visited
+                                 </a>
+                               
+                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item py-0" href="#">01-09-2019</a>
+                                    <a class="dropdown-item py-0" href="#">12-02-2019</a>
+                                    <a class="dropdown-item py-0" href="#">05-01-2019</a>
+                                 </div>
+                               </div>
+                           </td>
+                           </t>
+                     </tbody>
+                  </table>
+   
+               </div>
+               
+            </div>
+
+         </div >
+         
+
+         <hr class="bg-secondary">
+
+         <!-- prescription board -->
+        <div class="container-fluid pt-3">
+         <div class="row scroll_main_body scroll_details">
+            <!-- ============first column==================== -->
+            <div class="col-md-4 col-sm-12 border-right border-dark">
+               <!-- -------------Chief Complain Start-------------------------------- -->
+               <div class="max-height-1">
+                  <p class="font-weight-bold text-dark mb-2">Chief Complain:
+                     <span class="plus" data-toggle="modal" data-target="#chief_complain" data-dismiss="modal"> 
+                     <i class="fa fa-plus-circle fa-1x text-primary"> </i> 
+                     </span>
+                  </p>
+                  <hr>
+                  <table class="table">
+                     <tbody>
+                        <tr>
+                           <td class="py-0">
+                              <small class="text-capitalize list"> <li>Abnormal Sensation in throat</li></small>
+                           </td>
+                           <td class="w20 py-0"><small > ১০ দিন</small> </td>
+                           <td class="py-0 w10">
+                              <a><i   class="fa fa-times delete_icon cross_icon"></i>
+                              </a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="py-0">
+                              <small class="text-capitalize list"> <li>Abnormal Sensation in throat</li></small>
+                           </td>
+                           <td class="w20 py-0"><small > ১০ দিন</small> </td>
+                           <td class="py-0 w10">
+                              <a><i   class="fa fa-times delete_icon cross_icon"></i>
+                              </a>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+
+
+               <!-- -------------------------------Chief Complain End--------------------------------- -->
+
+
+
+               <!-- ---------------------------------On Examination Start:------------------------------- -->
+
+
+               <div class="max-height-1">
+                  <p class="font-weight-bold text-dark mb-0">On Examination:
+                     <span class="plus" data-toggle="modal" data-target="#on_examination" data-dismiss="modal"> 
+                     <i class="fa fa-plus-circle fa-1x text-primary"> </i> 
+                     </span>
+                  </p>
+                  <hr>
+                  <table class="table  ">
+                     <tbody>
+                        <tr class="">
+                           <td class=" pb-0 pl-0">
+                              <div class="row">
+                                 <div class="col">
+                                 <small><font class=" alert alert-secondary p-1 ">BT</font> <font class="font-weight-bold"> : 90</font> C</small>
+                                 </div>
+                                 <div class="col-5 ">
+                                 <small><font class="alert alert-secondary p-1 ">BP</font><font class="font-weight-bold"> : 120/80 </font> mmHg</small>
+                                 </div>
+                                 <div class="col">
+                                 <small><font class="alert alert-secondary p-1 ">HR</font><font class="font-weight-bold"> : 12</font> min</small>
+                                 </div>
+                              </div>
+                           </td>
+                           
+                        </tr>
+                        <tr >
+                           <td class=" pb-3 pl-0">
+                              <div class="row">
+                                 <div class="col pr-1">
+                                    <small  ><font class="alert alert-secondary p-1">RR</font><font class="font-weight-bold"> : 123</font> min</small>
+                                 </div>
+                                 <div class="col pr-1">
+                                    <small  ><font class="alert alert-secondary p-1">HT</font><font class="font-weight-bold"> : 5’9”</font> ft</small>
+                                 </div>
+                                 <div class="col pr-1">
+                                    <small  ><font class="alert alert-secondary p-1">WT</font><font class="font-weight-bold"> : 68</font> kg</small>
+                                 </div>
+                                 <div class="col pr-1">
+                                    <small  class=""><font class="alert alert-primary p-1">BMI</font><font class="font-weight-bold"> : 1212</font></small>
+                                 </div>
+                              </div>
+                              
+                              <!-- <small  class="mr-3 text-dark "><font class="text-primary">RR : </font><font class="font-weight-bold">123</font> min</small>
+                              <small  class="mr-3 text-dark"><font class="text-primary">HT : </font><font class="font-weight-bold">5’9”</font> ft</small>
+                              <small  class="mr-3 text-dark"><font class="text-primary">WT : </font><font class="font-weight-bold">68</font> kg</small>
+                              <small  class="mr-3 text-dark"><font class="font-weight-bold text-primary">BMI : </font><font class="font-weight-bold">1212</font></small> -->
+                           </td>
+                           
+                        </tr>
+                     
+                        <tr>
+                           
+                           <td class="py-0">
+                              <small class="text-capitalize list"> <li>brain hammaerohage</li></small>
+                           </td>
+                           <td class="py-0">
+                              <a><i   class="fa fa-times delete_icon cross_icon"></i>
+                              </a>
+                           </td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+                     </tbody>
+                  </table>
+               </div>
+               <!-- -------------------------On Examination End:----------------------------------- -->
+               <!-- --------------------Co morbid Illness Start:--------------------------------- -->
+               <div class="max-height-1">
+                  <p class="font-weight-bold text-dark mb-2">
+                     Co morbid Illness:
+                     <span class="plus" data-toggle="modal" data-target="#co_morbid_illness"> <i class="fa fa-plus-circle fa-1x text-primary"> </i> </span>
+                  </p>
+                  <hr>
+                  <table  class="table  ">
+                     <tbody>
+                        <tr>
+                           <td class=" py-0   w91">
+                              <small class="text-capitalize list"> <li>Lupus Nephritis on pulse therapy</li></small>
+                           </td>
+                           <td class=" py-0   border_none">
+                              <a><i   class="fa fa-times delete_icon cross_icon"></i> </a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class=" py-0   w91">
+                              <small class="text-capitalize list"> <li>Lupus Nephritis on pulse therapy</li></small>
+                           </td>
+                           <td class=" py-0   border_none">
+                              <a><i   class="fa fa-times delete_icon cross_icon"></i> </a>
+                           </td>
+                        </tr>
+                       
+                     </tbody>
+                  </table>
+               </div>
+               <!-- ----------------------------------Co morbid Illness End:--------------------------------------- -->
+               <!-- -----------------------------Investigation Start:---------------------------------------- -->
+               <div class="max-height-1">
+                  <p class="font-weight-bold text-dark mb-1">
+                     Investigation:
+                     <span class="plus" data-toggle="modal" data-target="#investigation"> <i class="fa fa-plus-circle fa-1x text-primary"> </i> </span>
+                  </p>
+                  <hr>
+                  <table class="table  ">
+                     <tbody>
+                        <tr>
+                           <td class=" py-0   w91">
+                              <small class="text-capitalize list"> <li>Alkalina phosphate (ALP)</li></small>
+                           </td>
+                           <td class=" py-0   border_none">
+                              <a><i   class="fa fa-times delete_icon cross_icon"></i> </a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class=" py-0   w91">
+                              <small class="text-capitalize list"> <li> Echo Color Doplar (only service charge)</li></small>
+                           </td>
+                           <td class=" py-0   border_none">
+                              <a><i   class="fa fa-times delete_icon cross_icon"></i> </a>
+                           </td>
+                        </tr>
+                        
+                        
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <!-- -----------------------------------Investigation End:----------------------------------------------------------->
+            <!-- ==================2nd Column============================= -->
+            <div class="col-md-4 col-sm-12 border-right border-dark">
+               <!-- ----------------------------------------- RX Start:------------------------------------------------------- -->
+               <div class="min-height-30">
+                  <p class="font-weight-bold mb-1">
+                     <img src="../niramoy/image/rx.png" width=35 height=uuto alt="">
+                     <span class="plus" data-toggle="modal" data-target="#rx"> <i class="fa fa-plus-circle fa-1x text-primary"> </i> </span>
+                  </p>
+                  <hr>
+                  
+                  <table  class="table  ">
+                     <tbody>
+
+
+                        <!-- <tr>
+                           <td class=" py-0   w91">
+                              <small class="text-capitalize list"> <li>Alkalina phosphate (ALP)</li></small>
+                           </td>
+                           <td class=" py-0   border_none">
+                              <a><i   class="fa fa-times delete_icon cross_icon"></i> </a>
+                           </td>
+                        </tr> -->
+                        <tr class="medi_row">
+                           <td style="width: 5%;" class="medi_name py-1 "> <small> <li> &nbsp;</li></small> </td>
+                           <td class=" py-1 w85">
+                              <small> <font class="font-weight-bold">Tab. Napa 500 mg</font>  <br> ১ + 0 + ১ &nbsp;&nbsp;ভরা পেটে খাবেন &nbsp;&nbsp;&nbsp; ১০ দিন</small>
+                           </td>
+                           <td class="py-1  ">
+                              <a ><i   class="fa fa-times delete_icon cross_icon"></i> </a>
+                           </td>
+                        </tr>
+                        <tr >
+                           <td style="width: 5%;" class="medi_name py-1"> <small> <li> &nbsp;</li></small> </td>
+                           <td class=" py-1 w85">
+                              <small> <font class="font-weight-bold">Tab. Napa 500 mg</font>  <br> ১ + 0 + ১ &nbsp;&nbsp;ভরা পেটে খাবেন &nbsp;&nbsp;&nbsp; ১০ দিন</small>
+                           </td>
+                           <td class="py-1 ">
+                              <a ><i   class="fa fa-times delete_icon cross_icon"></i> </a>
+                           </td>
+                        </tr>
+                        
+                        
+                     </tbody>
+                  </table>
+               </div>
+               <!-- ----------------------------------------- RX End:------------------------------------------------------- -->
+               <!-- ------------------------------------ Diagnosis Start:--------------------------------------------------- -->
+               <div class="max-height-1">
+                  <p class="font-weight-bold text-dark mb-1">
+                     Diagnosis :
+                     <span class="plus" data-toggle="modal" data-target="#diagnosis"> <i class="fa fa-plus-circle fa-1x text-primary"> </i> </span>
+                  </p>
+                  <hr>
+                  <table  class="table">
+                     <tbody>
+                        <tr>
+                           <td class=" py-0   w91">
+                              <small class="text-capitalize list"> <li> ABDOMINA PAIN</li></small>
+                           </td>
+                           <td class=" py-0   border_none">
+                              <a><i   class="fa fa-times delete_icon cross_icon"></i> </a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class=" py-0   w91">
+                              <small class="text-capitalize list"> <li> ABDOMINA PAIN</li></small>
+                           </td>
+                           <td class=" py-0   border_none">
+                              <a><i   class="fa fa-times delete_icon cross_icon"></i> </a>
+                           </td>
+                        </tr>
+                     
+                     </tbody>
+                  </table>
+               </div>
+               <!-- ------------------------------------ Diagnosis End:--------------------------------------------------- -->
+            </div>
+            <!-- ==================2nd Column End============================= -->
+            <!-- ==================3rd Column Start============================= -->
+            <div class="col-md-4 col-sm-12 pr0">
+               <!-- --------------------------- Advice  Start:------------------------------------------- -->
+               <div class="max-height-1">
+                  <p class="font-weight-bold text-dark mb-1">
+                     Advice :
+                     <span class="plus" data-toggle="modal" data-target="#advice"> <i class="fa fa-plus-circle fa-1x text-primary"> </i> </span>
+                  </p>
+                  <hr>
+                  <table class="table  ">
+                     <tbody>
+                        <tr>
+                           <td class=" py-0   w91">
+                              <small class="text-capitalize list"> <li>কুসুম গরম পানিতে হালকা লবন মিশিয়ে গড়গড়া করবেন</li></small>
+                           </td>
+                           <td class=" py-0   border_none">
+                              <a><i   class="fa fa-times delete_icon cross_icon"></i> </a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class=" py-0   w91">
+                              <small class="text-capitalize list"> <li>অনেকক্ষণ ঘাড় নিচু করে কাজ করবেন না</li></small>
+                           </td>
+                           <td class=" py-0   border_none">
+                              <a><i   class="fa fa-times delete_icon cross_icon"></i> </a>
+                           </td>
+                        </tr>
+                        
+                        
+                     </tbody>
+                  </table>
+               </div>
+               <!-- ------------------------------------------------------ Next FollowUp  Start:------------------------------------------------------- -->
+               <div class="max-height-1">
+                  <p class="font-weight-bold text-dark mb-1">
+                     Next FollowUp :
+                  </p>
+                  <hr>
+                  <table class="table">
+                     <tr>
+                        <td>Select Date: <input class="follow_up" type="date" width="200"/></td>
+                     </tr>
+                  </table>
+                  <table  class="table  ">
+                     <tbody>
+                        <tr >
+                           <td class="w90">
+                              <small>Date : Wednesday, July 10, 2019 <br> Time : 6 pm</small>
+                           </td>
+                           <td class=" ">
+                              <a ><i   class="fa fa-times delete_icon cross_icon"></i> </a>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <!-- ==================3rd Column End============================= -->
+         </div>
+
+        </div>
+
+
+        <div class="container-fluid">
+         <div class="row">
+            <div class="col">
+                  <div class="footer">
+                     <div class=" text-center  pt-3 pb-2 border-top">
+                        <div class="btn-group mr-2 mb-2" role="group" aria-label="First group">
+         
+                           <button type="button" class="btn btn-secondary btn-sm">&nbsp; <i class="fa fa-file-text-o" aria-hidden="true"></i> Save as Template &nbsp;</button>
+                        </div>
+         
+                        <div class="btn-group mr-2 mb-2" role="group" aria-label="Second group">
+                           <button type="button" class="btn btn-dark btn-sm">&nbsp; <i class="fa fa-floppy-o" aria-hidden="true"></i> Save Prescription &nbsp;</button>
+                         </div>
+         
+                         <div class="btn-group mb-2" role="group" aria-label="Third group">
+                           <button type="button" class="btn btn-primary btn-save-print btn-sm">&nbsp; <i class="fa fa-print" aria-hidden="true"></i> Save and Print&nbsp;</button>
+                         </div>
+                     </div>
+                  </div>
+            </div>
+         </div>
+        </div>
+        
+         <!-- ================= Main Prescription End========================= -->
+         <!-- ================= All Modal Start========================= -->
+         <!-- ---------------------------------------------------New Patient------------------------------------------------------------------ -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div  class="modal-dialog modal-dialog-centered max_width_new_patient" role="document">
+               <div  class="modal-content new_pt_holder d-inline">
+                  <div class="row modal-body">
+                     <div class="col-8" >
+                        <div class="m_head">
+                           <div class="col-8 d-inline padding_margin_new_patient">
+                              <h2 class="modal-title" id="exampleModalLabel">New Patient</h2>
+                              <hr>
+                           </div>
+                        </div>
+                        <div  class="d-inline">
+                           <form >
+                              <div class="form-row">
+                                 <div class="form-group col-8">
+                                    <label  for="inputEmail4">Name</label>
+                                    <input class="form-control" placeholder="Enter patient’s name">
+                                 </div>
+                                 <div class="form-group col-4">
+                                    <div>
+                                       <label for="inputEmail4">Age</label>
+                                    </div>
+                                    <input  type="text" class="form-control d-inline " id="inputAddress2" placeholder="Years">
+                                 </div>
+                              </div>
+                              <div class="form-row">
+                                 <div class="form-group col-8">
+                                    <div>
+                                       <label for="inputEmail4">Date of Birth</label>
+                                    </div>
+                                    <select id="inputState" class="form-control d-inline mw18">
+                                       <option selected>Year</option>
+                                       <option>...</option>
+                                    </select>
+                                    <select id="inputState" class="form-control d-inline mw18" >
+                                       <option selected>Day</option>
+                                       <option>...</option>
+                                    </select>
+                                    <select id="inputState" class="form-control d-inline mw18">
+                                       <option selected>Day</option>
+                                       <option>...</option>
+                                    </select>
+                                 </div>
+                                 <div class="form-group col-4">
+                                    <div>
+                                       <label for="inputEmail4">Gender</label>
+                                    </div>
+                                    <label class="radio-inline" for="radios-0">
+                                    <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+                                    Male
+                                    </label> 
+                                    <label class="radio-inline" for="radios-1">
+                                    <input type="radio" name="radios" id="radios-1" value="2">
+                                    Female
+                                    </label> 
+                                 </div>
+                              </div>
+                              <div class="form-row">
+                                 <div class="form-group col-7">
+                                    <label for="inputAddress2">Phone Number</label>
+                                    <input type="text" class="form-control" id="inputAddress2" value="+880" placeholder="Ex. +8801700000000">
+                                 </div>
+                              </div>
+                              <div class="form-row">
+                                 <div class="form-group col-3">
+                                    <label for="inputCity">District:</label>
+                                    <select id="inputState" class="form-control">
+                                       <option>Dhaka</option>
+                                       <option>Rajshahi</option>
+                                       <option>Comilla</option>
+                                    </select>
+                                 </div>
+                                 <div class="form-group col-3">
+                                    <label for="inputCity">Address:</label>
+                                    <select id="inputState" class="form-control">
+                                       <option>Adabor</option>
+                                       <option>Tejgaon</option>
+                                    </select>
+                                 </div>
+                                 <div class="form-group col-3 ">
+                                    <label for="inputState">State</label>
+                                    <select id="inputState" class="form-control btn-sm">
+                                       <option selected>Zip Code</option>
+                                       <option>1202</option>
+                                       <option>1227</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="form-group">
+                                 <label for="inputState">Address:</label>
+                                 <textarea class="form-control p_address" id="textarea" placeholder="Enter Patient’s full address" name="textarea"></textarea>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="col-3">
+                        <a class=" d-inline" href=""><img src="../niramoy/image/newpatient.png" alt="some text" width=123 height=129></a>
+                     </div>
+                     <div class="col-1">
+                        <button type="button button-round" class="close cross" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="form-group d-flex justify-content-center">
+                     <button type="button" class="btn btn-primary btn-save ">Save</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- ---------------------------------------------------Exixting Patient------------------------------------------------------------------ -->
+         <div class="modal fade" id="exampleexixtingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered exist_patient_modal_size" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <div class="col-md-9">
+                        <h2 class="modal-title" id="exampleModalLabel">Existing Patient</h2>
+                        <hr>
+                     </div>
+                     <a  class="col-md-1" href=""><img src="../niramoy/image/newpatient.png" alt="some text" width=55 height=58></a>
+                     <button type="button button-round" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                     </button>
+                  </div>
+                  <div  class="modal-body">
+                     <form>
+                        <div class="form-row">
+                           <div class="form-group col">
+                              <label for="inputEmail4">Enter Patient’s Registration No. or Mobile Number</label>
+                              <input class="form-control mt4" placeholder="Enter Patient’s Registration No. or Mobile Number">
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="form-group mr-auto ml-auto">
+                     <button type="button" class="btn btn-primary btn-save "  data-toggle="modal" data-target="#after_search" data-dismiss="modal">Search Patient</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <!-- --------------------Chief Complain-------------------------------------------------------- -->
+
+         <div class="modal fade" id="chief_complain" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal_max_width" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title modal_head_name_h2 font-weight-bold">Chief Complain</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body ">
+                  <div class="form-group row mb-2">
+                     <label class="col-sm-3 col-form-label font-weight-bold">Search chief complain:</label>
+                     <div class="col-sm-8">
+                        <div class="input-group input-group-sm">
+                           <!-- <div class="input-group-prepend">
+                             <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                           </div> -->
+                           <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Ex: Jaundice">
+                           <div class="input-group-append pointer">
+                             <span class="input-group-text bg-primary text-white"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp Add</span>
+                           </div>
+                         </div>
+                     </div>
+                   </div>
+                   
+                  <div class="  form-group  chief_complain_modal back_color scroll_chief_complain scroll_details" >
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Dehydration :Absent</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 3+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">abdomnal swelling</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Brain hammaerohage</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Lymph node ceryical 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">nasal polyp</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Thyroid Not Enlarged</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 3+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Brain hammaerohage</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Mc Burney point tenderness : Present. :Absent</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Lymph node ceryical 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">nasal polyp</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Thyroid Not Enlarged</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 3+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Brain hammaerohage</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Mc Burney point tenderness : Present. :Absent</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Lymph node ceryical 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">nasal polyp</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Thyroid Not Enlarged</button>
+                  </div>
+                  <div class="scroll_chief_complain chief_complain_selected scroll_details">
+                     <div class="table-responsive">
+                        
+                        <table class="table table-sm table-striped" >
+                           <tbody>
+                              <!-- <thead class="thead-dark">
+                                 <tr>
+                                   <th scope="col">#</th>
+                                   <th scope="col">Complain name</th>
+                                   <th scope="col">Schedule</th>
+                                   <th scope="col">Duration</th>
+                                   <th scope="col">Note</th>
+                                   <th scope="col">*</th>
+                                 </tr>
+                               </thead> -->
+                              
+                              <tr class="border-bottom border-white spaceUnder">
+                                 <th scope="row" style="width: 2%;" >1.</th>
+                                 <td style="width: 53%;"><label for="inputPassword" class="form-label select_color my-auto">Mc Burney point tenderness : Present</label></td>
+                                 <td style="width: 10%;"><input class="form-control form-control-sm w-100  medicine_form_schedule " type="number"  value="0" name="quantity" min="0" max="9"> </td>
+                                 <td style="width: 10%;">
+                                    <select class="form-control form-control-sm medicine_form_schedule3  csday_week_month w-100 ">
+                                       <option>Days</option>
+                                       <option>Week</option>
+                                       <option>Month</option>
+                                       <option>Year</option>
+                                    </select>
+                                 </td>
+                                 <td style="width: 20%;"><input type="text" class="form-control form-control-sm notelh" id="inputPassword" placeholder="Add notes"></td>
+                                 <td class=" text-center" style="width: 5%;">
+                                    <div class="my-auto" <a ><i   class="fa fa-times delete_icon cross_icon"></i> </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                    
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary btn-save ">Save Complain</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+         
+      <!-- ---------------------------------------------------On Examination Start------------------------------------------------------------------ -->
+      <div class="modal fade " id="on_examination" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div  class="modal-dialog modal-dialog-centered modal_max_width" role="document">
+            <div  class="modal-content modal_content_backcolor_padding_font">
+
+               <div class="modal-header">
+                  <h4 class="modal-title modal_head_name_h2 font-weight-bold">On Examination</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+               <div class="modal-body">
+                  <div class="form-group row mb-0">
+                     <label class="col-sm-3 col-form-label font-weight-bold">Search On Examination:</label>
+                     <div class="col-sm-8">
+                        <div class="input-group input-group-sm">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text bg-white border-right-white"><i class="fa fa-search" aria-hidden="true"></i></div>
+                            </div>
+                           <input type="text" class="form-control border-left-white" aria-label="Amount (to the nearest dollar)" placeholder="Example: Nasal polyp">
+                           <div class="input-group-append pointer">
+                             <span class="input-group-text bg-primary text-white"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp Add</span>
+                           </div>
+                         </div>
+                         <!-- <span class="hover_class"  >
+                           <ul class="dd-menu scroll_search_list scroll_details">
+                            <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                             <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                             <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                             <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                              </ul>
+                             </span> -->
+                     </div>
+                   </div>
+                  
+                   <hr>
+                  <form class=" form-inline form-group mb-0 mt-3">
+                     <div class="form-group ">
+                        <button type="button" class="btn btn-white btn-sm text-theme-blue italic">BT:</button>
+                        <input  type="text" class="form-control form-control-sm w-mod1" placeholder="(ºC)">
+                     </div>
+                     <div class="form-group">
+                       <button type="button" class="btn btn-white btn-sm text-theme-blue italic">HR</button>
+                       <input  type="text" class="form-control form-control-sm w-mod1" placeholder="Pulse per minute">
+                     </div>
+                     <div class="form-group">
+                        <button type="button" class="btn btn-white btn-sm text-theme-blue italic">RR</button>
+                        <input  type="text" class="form-control form-control-sm w-mod1" id="inputPassword2 h30" placeholder="Breaths per minute">
+                     </div>
+                     <div class="form-group">
+                        <button  type="button" class="btn btn-white btn-sm text-theme-blue italic">BP</button>
+                        <input type="text" class="form-control form-control-sm w-mod1" placeholder="High/Low">
+                     </div>
+                     
+                     <div class="form-group">
+                        <button type="button" class="btn btn-white btn-sm text-theme-blue italic">Weight</button>
+                        <input  type="number" class="form-control form-control-sm w-mod1" placeholder="Kg">
+                     </div>
+                     <div class="form-group">
+                        <button type="button" class="btn btn-white btn-sm text-theme-blue italic">Height</button>
+                        <input  type="number" class="form-control form-control-sm w-mod1" placeholder="meter">
+                     </div>
+                     <div class="form-group">
+                        <button type="button" class="btn btn-white btn-sm text-theme-blue italic">BMI result</button>
+                        <input  type="number" class="form-control form-control-sm  bmi_input w-mod1"  placeholder="">
+                     </div>
+                
+                  </form>
+
+                  <div class=" form-group scroll_on_examination chief_complain_modal back_color scroll_details mt-3" >
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2 ">Dehydration :Absent</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2 ">Juandice 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 3+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">abdomnal swelling</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Brain hammaerohage</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Lymph node ceryical 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">nasal polyp</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Thyroid Not Enlarged</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 3+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Brain hammaerohage</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Mc Burney point tenderness : Present. :Absent</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Lymph node ceryical 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">nasal polyp</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Thyroid Not Enlarged</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 3+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Brain hammaerohage</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Mc Burney point tenderness : Present. :Absent</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Lymph node ceryical 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">nasal polyp</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Thyroid Not Enlarged</button>
+                  </div>
+                  <div class="  form-group scroll_on_examination_selected scroll_details" >
+                     <!-- <a href="#" class="notification" title="Lymph node ceryical 1+"><span> <font class="slct_cmi" >Lymph node ceryical 1+</font> </span><span class="badge"><i class="fa fa-times-circle fa-2x"></i></span></a> -->
+                     <button type="button" class="btn btn-info btn-sm mr-2 mb-2" title="Lymph node ceryical 1+">
+                        Lymph node ceryical 1<span class="badge badge-light ml-2"><i class="fa fa-times" aria-hidden="true"></i></span>
+                      </button>
+                      <button type="button" class="btn btn-info btn-sm mr-2 mb-2" title="Lymph node ceryical 1+">
+                        Lymph node ceryical 1<span class="badge badge-light ml-2"><i class="fa fa-times" aria-hidden="true"></i></span>
+                      </button>
+                  </div>
+                
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button  type="button" class="btn btn-primary btn-save">Save Examination</button>
+                </div>
+            </div>
+         </div>
+      </div>
+      <!-- -------------------------------------------------Co morbid Illness: Start--------------------------------------------------------------->
+      <div class="modal fade" id="co_morbid_illness" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal_max_width" role="document">
+            <div  class="modal-content modal_content_backcolor_padding_font">
+               <div class="modal-header">
+                  <h4 class="modal-title modal_head_name_h2 font-weight-bold">Co Morbid Illness</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+
+                  <div class="form-group row mb-0">
+                     <label class="col-sm-3 col-form-label font-weight-bold">Search Co Morbid Illness:</label>
+                     <div class="col-sm-8">
+                        <div class="input-group input-group-sm">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text bg-white border-right-white"><i class="fa fa-search" aria-hidden="true"></i></div>
+                            </div>
+                           <input type="text" class="form-control border-left-white" aria-label="Amount (to the nearest dollar)" placeholder="Example: Nasal polyp">
+                           <div class="input-group-append pointer">
+                             <span class="input-group-text bg-primary text-white"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp Add</span>
+                           </div>
+                         </div>
+                         <!-- <span class="hover_class"  >
+                           <ul class="dd-menu scroll_search_list scroll_details">
+                            <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                             <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                             <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                             <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                              </ul>
+                             </span> -->
+                     </div>
+                   </div>
+                   <hr>
+
+                   <div class="form-group scroll_co_morbid chief_complain_modal back_color scroll_details" >
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Dehydration :Absent</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 3+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">abdomnal swelling</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Brain hammaerohage</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Lymph node ceryical 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">nasal polyp</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Thyroid Not Enlarged</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 3+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Brain hammaerohage</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Mc Burney point tenderness : Present. :Absent</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Lymph node ceryical 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">nasal polyp</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Thyroid Not Enlarged</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 3+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Brain hammaerohage</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Mc Burney point tenderness : Present. :Absent</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Lymph node ceryical 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">nasal polyp</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Thyroid Not Enlarged</button>
+                  </div>
+
+                  <div class="  form-group scroll_on_examination_selected scroll_details" >
+                     <!-- <a href="#" class="notification" title="Lymph node ceryical 1+"><span> <font class="slct_cmi" >Lymph node ceryical 1+</font> </span><span class="badge"><i class="fa fa-times-circle fa-2x"></i></span></a> -->
+                     <button type="button" class="btn btn-info btn-sm mr-2 mb-2" title="Lymph node ceryical 1+">
+                        Lymph node ceryical 1<span class="badge badge-light ml-2"><i class="fa fa-times" aria-hidden="true"></i></span>
+                      </button>
+                      <button type="button" class="btn btn-info btn-sm mr-2 mb-2" title="Lymph node ceryical 1+">
+                        Lymph node ceryical 1<span class="badge badge-light ml-2"><i class="fa fa-times" aria-hidden="true"></i></span>
+                      </button>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button  type="button" class="btn btn-primary btn-save">Save Examination</button>
+                </div>
+            </div>
+         </div>
+      </div>
+      <!-- -------------------------------------------------Investigation: Start------------------------------------------------------------------ -->
+      <div class="modal fade" id="investigation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal_invest_width">
+            <div  class="modal-content modal_content_backcolor_padding_font">
+
+
+               <div class="modal-header py-2">
+                  <h4 class="modal-title modal_head_name_h2 font-weight-bold">Investigation</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+               <div class=" modal-body">
+
+
+                  <div class="form-group row mb-0">
+                     <label class="col-sm-3 col-form-label font-weight-bold">Search Investigation:</label>
+                     <div class="col-sm-8">
+                        <div class="input-group input-group-sm">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text bg-white border-right-white"><i class="fa fa-search" aria-hidden="true"></i></div>
+                            </div>
+                           <input type="text" class="form-control border-left-white" aria-label="Amount (to the nearest dollar)" placeholder="Example: Nasal polyp">
+                           <div class="input-group-append pointer">
+                             <span class="input-group-text bg-primary text-white"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp Add</span>
+                           </div>
+                         </div>
+                         <!-- <span class="hover_class"  >
+                           <ul class="dd-menu scroll_search_list scroll_details">
+                            <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                             <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                             <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                             <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                              </ul>
+                             </span> -->
+                     </div>
+                   </div>
+                   <hr>
+
+
+
+
+                  <div class="form-group investigation_modal back_color" >
+                     <div class="row ">
+                        <div class="col-3 border-right">
+                           <div class=" py-2">
+                           <p class="font-weight-bold text-center mb-0 pt-2">Test Catagory </p>
+                           </div>
+                           <hr>
+                           <div class="scroll_investigation scroll_details px-2">
+                              <button class="btn btn-primary btn-sm btn-block" title="Charges of Artificial Organs"  >CT of HBS</button>
+                              <button class="btn btn-primary btn-sm btn-block overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary btn-sm btn-block overflow" title="Charges of Artificial Organs"  >CAG</button>
+                              <button class="btn btn-primary btn-sm btn-block overflow" title="Charges of Artificial Organs"  >Charges of Artificial Organsdghdgfhdfgh</button>
+                              <button class="btn btn-primary btn-sm btn-block overflow" title="Charges of Artificial Organs"  >CT of HBS</button>
+                              <button class="btn btn-primary btn-sm btn-block overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary btn-sm btn-block overflow" title="Charges of Artificial Organs"  >CAG</button>
+                              <button class="btn btn-primary btn-sm btn-block overflow" title="Charges of Artificial Organs"  >Charges of Artificial Organsdghdgfhdfgh</button>
+                           </div>
+                        </div>
+                        <div class="col-9 scroll_details">
+                           
+                           <div class=" py-2">
+                              <p class="font-weight-bold text-center mb-0 pt-2">Test Catagory </p>
+                              </div>
+                              <hr>
+
+                           <div style="background-color:whitesmoke" class="scroll_investigation scroll_details">
+                              <button class="btn btn-primary type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CT of HBS</button>
+                              <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                              <button class="btn btn-primary  type1_btn btn_width_tst_list margin3 overflow " title="Charges of Artificial Organs"  >USG of Uterus & Adnexae</button>
+                              <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary  type1_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >USG of Pregnancy Profileggghghghghghg</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CT of HBS</button>
+                              <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                              <button class="btn btn-primary  type1_btn btn_width_tst_list margin3 overflow " title="Charges of Artificial Organs"  >USG of Uterus & Adnexae</button>
+                              <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary  type1_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >USG of Pregnancy Profileggghghghghghg</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CT of HBS</button>
+                              <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                              <button class="btn btn-primary  type1_btn btn_width_tst_list margin3 overflow " title="Charges of Artificial Organs"  >USG of Uterus & Adnexae</button>
+                              <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary  type1_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >USG of Pregnancy Profileggghghghghghg</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                              
+                           </div>
+                           
+                              
+                          
+                           
+                           
+                        </div>
+                       
+                        
+                     </div>
+                    
+                  </div>
+                  <div class="  form-group scroll_on_examination_selected scroll_details" >
+                     <!-- <a href="#" class="notification" title="Lymph node ceryical 1+"><span> <font class="slct_cmi" >Lymph node ceryical 1+</font> </span><span class="badge"><i class="fa fa-times-circle fa-2x"></i></span></a> -->
+                     <button type="button" class="btn btn-info btn-sm mr-2 mb-2" title="Lymph node ceryical 1+">
+                        Lymph node ceryical 1<span class="badge badge-light ml-2"><i class="fa fa-times" aria-hidden="true"></i></span>
+                      </button>
+                      <button type="button" class="btn btn-info btn-sm mr-2 mb-2" title="Lymph node ceryical 1+">
+                        Lymph node ceryical 1<span class="badge badge-light ml-2"><i class="fa fa-times" aria-hidden="true"></i></span>
+                      </button>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button  type="button" class="btn btn-primary btn-save">Save Investigation</button>
+                </div>
+               
+            </div>
+         </div>
+      </div>
+
+      
+      <!-- -------------------------------------------------Rx: Start------------------------------------------------------------------ -->
+      <div class="modal fade modal-tall" id="rx" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal_max_width" role="document">
+            <div  class="modal-content modal_content_rx_backcolor_padding_font">
+               <div class="modal-header modal_header_border_margin">
+                  <div class="col-12 modal_col_12_padding_top_left">
+                     
+
+                     <div class="row rxtop_row_padding_right has-search">
+                        <h2 class="modal-title modal_head_name_h2 mr-auto" id="exampleModalLabel">Rx</h2>
+                        
+                        <form class="search-form form-group d-inline col-9 rx_padding_left">
+                           <span class="fa fa-search form-control-feedback"></span>
+                           <input class=" search-input form-control "  type="text" name="" placeholder="Search or Add Examination">
+                           <!-- <button class="btn btn-sm search-button" >Add</button> -->
+                         
+                             <span  class="hover_class"  >
+                             <ul   class="dd-menu scroll_search_list scroll_details"   >
+                                 <!-- <li class="per_list ">
+                                     <input id="1" class="conditions-check" type="checkbox">
+                                     <label for="1" > <span> Noman</span> </label>
+                                     <label class="checkbox">
+                                       <input type="checkbox" />
+                                       <span><font class="check_medicine">Check Me</font></span>
+                                   </label>
+                                 </li> -->
+                                 <li class="per_list overflow" style="width: 602px;">
+
+                                    <label class="checkbox">
+                                      <input type="checkbox" />
+                                      <span title="Title here"><font class="check_medicine ">Check Me</font></span>
+                                  </label>
+                                </li>
+                                <li class="per_list overflow" style="width: 602px;">
+
+                                 <label class="checkbox">
+                                   <input type="checkbox" />
+                                   <span title="Title here"><font class="check_medicine ">Check Me</font></span>
+                               </label>
+                             </li>
+                             <li class="per_list overflow" style="width: 602px;">
+
+                              <label class="checkbox">
+                                <input type="checkbox" />
+                                <span title="Title here"><font class="check_medicine ">Check Me</font></span>
+                            </label>
+                          </li>
+                          <li class="per_list overflow" style="width: 602px;">
+
+                           <label class="checkbox">
+                             <input type="checkbox" />
+                             <span title="Title here"><font class="check_medicine ">Check Me</font></span>
+                         </label>
+                       </li>
+                       <li class="per_list overflow" style="width: 602px;">
+
+                        <label class="checkbox">
+                          <input type="checkbox" />
+                          <span title="Title here"><font class="check_medicine ">Check Me</font></span>
+                      </label>
+                    </li>
+                                 
+                                <li class="per_list">
+                                 <input id="3" class="conditions-check" type="checkbox">
+                                 <label for="3" >noman</label>
+                             </li>
+                             <li class="per_list">
+                              <input id="4" class="conditions-check" type="checkbox">
+                              <label for="4" >noman</label>
+                          </li>
+                          <li class="per_list">
+                           <input id="5" class="conditions-check" type="checkbox">
+                           <label for="5" >noman</label>
+                       </li>
+                       <li class="per_list">
+                        <input id="6" class="conditions-check" type="checkbox">
+                        <label for="6" >noman</label>
+                    </li>
+
+                               
+                                
+                                </ul>
+                               </span>
+                           
+                         </form>
+                         
+                        <div class=" d-inline brand_selector" >
+                           <select class="form-control medicine_form_schedule4 d-inline h35 w100 name_selector">
+                              <option>Brand Name</option>
+                              <option>Generic Name</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <button    type="button button-round" class="close cross" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+
+
+
+             
+
+               <div class=" modal-body  modal_body_padding_bottom">
+                  <div class="  form-group  chief_complain_modal2 back_color scroll_details" >
+
+                     <nav class=" width_100_white_back">
+                        <div class="nav nav-tabs catagory_select margin_bottom" id="nav-tab" role="tablist">
+                           <a class="nav-item nav-link active custom_a brand_generic_name" id="nav-brand-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Brand Name</a>
+                           <a class="nav-item nav-link brand_generic_name" id="nav-generic-tab " data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false" >Generic Name</a>
+                        </div>
+                     </nav>
+
+                     <div class="tab-content scroll_details scroll_medicine_list_item_board medicine_suggestion" id="nav-tabContent">
+                        <div class=" tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-brand-tab">
+                           <div class=" padding_left">
+                              <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Cap. Sabitar 24 mg+26 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Pas. Apsol 50 mg/gm </button>
+                              <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Syr. Nystat 100000 unit/ml </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Carvista 6.25 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Cap. Amitripati 500mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Barbit 30mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Inj. Acerux 250 mg/vial</button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
+                              <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Cap. Sabitar 24 mg+26 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Pas. Apsol 50 mg/gm </button>
+                              <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Syr. Nystat 100000 unit/ml </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Carvista 6.25 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Cap. Amitripati 500mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Barbit 30mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Inj. Acerux 250 mg/vial</button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-generic-tab">
+                           <div class=" scroll_chief_complain2 scroll_details padding_left">
+                              <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Cap. Sabitar 24 mg+26 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Pas. Apsol 50 mg/gm </button>
+                              <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Syr. Nystat 100000 unit/ml </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Carvista 6.25 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Cap. Amitripati 500mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Barbit 30mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Inj. Acerux 250 mg/vial</button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
+                              <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Cap. Sabitar 24 mg+26 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Pas. Apsol 50 mg/gm </button>
+                              <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Syr. Nystat 100000 unit/ml </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Carvista 6.25 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Cap. Amitripati 500mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Barbit 30mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Inj. Acerux 250 mg/vial</button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
+                              <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="scroll_medication selected_medicine_list_board scroll_details medicine_selected modal-body ">
+                  
+                     <!-- ----------------------------------------------------------------------------------------- -->
+                     <table class="table medicine_select select_medicine2 back_color2">
+                        <tr >
+                           <td class="firstcol select_medicine_name" rowspan="2">
+                              1. &nbsp;Tab. Napa 500 mg
+                           </td>
+                           <td class="firstcol schedule_td">
+                              Schedule: &nbsp;
+                              <select class="form-control medicine_form_schedule2 day_week_month d-inline">
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>6</option>
+                              </select>
+                           </td>
+                           <td  class="firstcol2 inputWithIcon advice_input" >
+                              <input type="text" class="w85 form-control medicine_form_schedule1" placeholder="Search or Add direction" >
+                                  
+                             <span  class="hover_class_advice"  >
+                              <ul   class="dd-menu1 scroll_search_list_advice scroll_details"   >
+                                  <li class="per_list1" >
+
+                                      <label  >noman</label>
+                                  </li>
+                                  <li class="per_list1">
+                                   
+                                      <label  >noman</label>
+                                  </li>
+                                   <li class="per_list1">
+                                  
+                                      <label  >noman</label>
+                                  </li>
+                                  <li class="per_list1">
+
+                                    <label  >noman</label>
+                                </li>
+                                <li class="per_list1">
+                                 
+                                    <label  >noman</label>
+                                </li>
+                                 <li class="per_list1">
+                                
+                                    <label  >noman</label>
+                                </li>
+                                <li class="per_list1">
+
+                                 <label  >noman</label>
+                             </li>
+                             <li class="per_list1">
+                              
+                                 <label  >noman</label>
+                             </li>
+                              <li class="per_list1">
+                             
+                                 <label  >noman</label>
+                             </li>
+                                 </ul>
+                                </span>
+                                <button class="btn btn_add"></button>
+                              <!-- <i class="fa fa-edit fa-sm fa-fw" aria-hidden="true"></i> -->
+                              <!-- <div class=" d-inline brand_selector" >
+                                 <select class="form-control medicine_form_schedule4 d-inline h35 w100 name_selector">
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    <option>খাবার পরে</option>
+                                    <option>কুলি করবেন গিলবেন না</option>
+                                    
+                                 </select>
+                              </div> -->
+                           </td>
+                           <td class="duration_box">Duration </td>
+                           <td class="  width_1">
+                              <i   class="fa fa-times delete_icon cross_icon"></i>
+                           </td>
+                        </tr>
+                        <tr >
+                           <td class="firstcol pt-0">
+                              <div>
+                                 <input class="form-control medicine_form_schedule d-inline edit_width2 mr_bt4" type="number"  value="0" name="quantity" min="0" max="9"> + <input class="form-control medicine_form_schedule d-inline edit_width2 mr_bt4" type="number"  value="0" name="quantity" min="0" max="9"> + <input class="form-control medicine_form_schedule d-inline edit_width2 mr_bt4" type="number"  value="0" name="quantity" min="0" max="9"> + <input class="form-control medicine_form_schedule d-inline edit_width2 mr_bt4" type="number"  value="0" name="quantity" min="0" max="9">
+                              </div>
+                           </td>
+                           <td class="firstcol pad_top_0">
+                              <div class="pad_top_5px">
+                                 <button type="button" class="btn btn-primary select_direction_btn3 edit_margin2">খাবার পরে</button><button type="button" class="btn btn-primary select_direction_btn3 edit_margin2">কুলি করবেন গিলবেন না</button>
+                              </div>
+                           </td>
+                           <td class="pad_top_0">
+                        
+                             <input class="form-control medicine_form_schedule d-inline" type="number"  value="0" name="quantity" > 
+                              <select class="form-control medicine_form_schedule3 d-inline day_week_month">
+                                 <option>Days</option>
+                                 <option>Week</option>
+                                 <option>Month</option>
+                                 <option>Year</option>
+                              </select>
+                           </td>
+                           <td></td>
+                        </tr>
+                     </table>
+                     
+                  </div>
+               </div>
+
+               
+            </div>
+         </div>
+      </div>
+      <!-- ---------------------------------------------Diagnosis------------------------------------------------------------- -->
+      <div class="modal fade modal-tall" id="diagnosis" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal_max_width" role="document">
+            <div  class="modal-content modal_content_backcolor_padding_font modal_min_height">
+
+               <div class="modal-header">
+                  <h4 class="modal-title modal_head_name_h2 font-weight-bold">Diagnosis</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <div class="modal-body">
+                  <div class="form-group row mb-0">
+                     <label class="col-sm-3 col-form-label font-weight-bold">Search Diagnosis:</label>
+                     <div class="col-sm-6">
+                        
+                        <div class="input-group input-group-sm">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text bg-white border-right-white"><i class="fa fa-search" aria-hidden="true"></i></div>
+                            </div>
+                           <input type="text" class="form-control border-left-white" aria-label="Amount (to the nearest dollar)" placeholder="Example: Nasal polyp">
+                           <div class="input-group-append pointer">
+                             <span class="input-group-text bg-primary text-white"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp Add</span>
+                           </div>
+                         </div>
+                      
+                         <!-- <span class="hover_class"  >
+                           <ul class="dd-menu scroll_search_list scroll_details">
+                            <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                             <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                             <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                             <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                              </ul>
+                             </span> -->
+                     </div>
+                     <div class="col-sm-2">
+                        <select class="form-control form-control-sm">
+                           <option>Listed</option>
+                           <option>ICD-10</option>
+                         </select>
+                       
+                     </div>
+                   </div>
+                   <hr>
+
+
+                   <div class="form-group scroll_co_morbid chief_complain_modal back_color scroll_details" >
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Dehydration :Absent</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 3+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">abdomnal swelling</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Brain hammaerohage</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Lymph node ceryical 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">nasal polyp</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Thyroid Not Enlarged</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 3+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Brain hammaerohage</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Mc Burney point tenderness : Present. :Absent</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Lymph node ceryical 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">nasal polyp</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Thyroid Not Enlarged</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Juandice 3+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Brain hammaerohage</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Spleen</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Mc Burney point tenderness : Present. :Absent</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Lymph node ceryical 1+</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">nasal polyp</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">Thyroid Not Enlarged</button>
+                  </div>
+
+                  <div class="  form-group scroll_on_examination_selected scroll_details" >
+                     <!-- <a href="#" class="notification" title="Lymph node ceryical 1+"><span> <font class="slct_cmi" >Lymph node ceryical 1+</font> </span><span class="badge"><i class="fa fa-times-circle fa-2x"></i></span></a> -->
+                     <button type="button" class="btn btn-info btn-sm mr-2 mb-2" title="Lymph node ceryical 1+">
+                        Lymph node ceryical 1<span class="badge badge-light ml-2"><i class="fa fa-times" aria-hidden="true"></i></span>
+                      </button>
+                      <button type="button" class="btn btn-info btn-sm mr-2 mb-2" title="Lymph node ceryical 1+">
+                        Lymph node ceryical 1<span class="badge badge-light ml-2"><i class="fa fa-times" aria-hidden="true"></i></span>
+                      </button>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button  type="button" class="btn btn-primary btn-save">Save Diagnosis</button>
+                </div>
+            </div>
+         </div>
+      </div>
+      <!-- -------------------------------------------advide------------------------------------------------------ -->
+
+
+      <div class="modal fade modal-tall" id="advice" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal_max_width" role="document">
+            <div  class="modal-content modal_content_backcolor_padding_font modal_min_height">
+
+               <div class="modal-header">
+                  <h4 class="modal-title modal_head_name_h2 font-weight-bold">Diagnosis</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <div class="modal-body">
+                  <div class="form-group row mb-0">
+                     <label class="col-sm-2 col-form-label font-weight-bold">Search Advice:</label>
+                     <div class="col-sm-8">
+                        
+                        <div class="input-group input-group-sm">
+                           <div class="input-group-prepend">
+                              <div class="input-group-text bg-white border-right-white"><i class="fa fa-search" aria-hidden="true"></i></div>
+                            </div>
+                           <input type="text" class="form-control border-left-white" aria-label="Amount (to the nearest dollar)" placeholder="Example: Nasal polyp">
+                           <div class="input-group-append pointer">
+                             <span class="input-group-text bg-primary text-white"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp Add</span>
+                           </div>
+                         </div>
+                      
+                         <!-- <span class="hover_class"  >
+                           <ul class="dd-menu scroll_search_list scroll_details">
+                            <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                             <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                             <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                             <li>
+                               <div class="per_list">
+                                 <input class="conditions-check" type="checkbox">
+                                 <label >noman</label>
+                               </div>
+                             </li>
+                              </ul>
+                             </span> -->
+                     </div>
+                   </div>
+                   <hr>
+
+
+                   <div class="  form-group scroll_diagnosis chief_complain_modal back_color scroll_details" >
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2"> সারাদিনে একবার ভাত খাবেন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">ভাজি খাওয়া পরিহার করুন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">ভারি কাজ করবেন না</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">পাতলা নরম বালিশ ১টা ব্যাবহার করবেন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">অনেকক্ষণ ঘাড় নিচু করে কাজ করবেন না</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">চশমা ব্যাবহার করুন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">ছোট মাছ, ডিম, দুধ, মাংশ বেশি খাবেন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">সপ্তাহে একবার Diabetes পরীক্ষা করাবেন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">অনেকক্ষণ ঘাড় নিচু করে কাজ করবেন না</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">চশমা ব্যাবহার করুন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">ছোট মাছ, ডিম, দুধ, মাংশ বেশি খাবেন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">সপ্তাহে একবার Diabetes পরীক্ষা করাবেন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2"> সারাদিনে একবার ভাত খাবেন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">ভাজি খাওয়া পরিহার করুন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">ভারি কাজ করবেন না</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">পাতলা নরম বালিশ ১টা ব্যাবহার করবেন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">অনেকক্ষণ ঘাড় নিচু করে কাজ করবেন না</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">চশমা ব্যাবহার করুন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">ছোট মাছ, ডিম, দুধ, মাংশ বেশি খাবেন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2"> সারাদিনে একবার ভাত খাবেন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">ভাজি খাওয়া পরিহার করুন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">ভারি কাজ করবেন না</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">পাতলা নরম বালিশ ১টা ব্যাবহার করবেন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">অনেকক্ষণ ঘাড় নিচু করে কাজ করবেন না</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">চশমা ব্যাবহার করুন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">ছোট মাছ, ডিম, দুধ, মাংশ বেশি খাবেন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2">সপ্তাহে একবার Diabetes পরীক্ষা করাবেন</button>
+                     <button type="button" class="btn btn-primary btn-sm mb-2 mr-2"> সারাদিনে একবার ভাত খাবেন</button>
+                    
+                  </div>
+
+
+                  
+
+                  <div class="  form-group scroll_on_examination_selected scroll_details" >
+                     <!-- <a href="#" class="notification" title="Lymph node ceryical 1+"><span> <font class="slct_cmi" >Lymph node ceryical 1+</font> </span><span class="badge"><i class="fa fa-times-circle fa-2x"></i></span></a> -->
+                     <button type="button" class="btn btn-info btn-sm mr-2 mb-2" title="ছোট মাছ, ডিম, দুধ, মাংশ বেশি খাবেন">
+                        ছোট মাছ, ডিম, দুধ, মাংশ বেশি খাবেন<span class="badge badge-light ml-2"><i class="fa fa-times" aria-hidden="true"></i></span>
+                      </button>
+                      <button type="button" class="btn btn-info btn-sm mr-2 mb-2" title="অনেকক্ষণ ঘাড় নিচু করে কাজ করবেন না">
+                        অনেকক্ষণ ঘাড় নিচু করে কাজ করবেন না<span class="badge badge-light ml-2"><i class="fa fa-times" aria-hidden="true"></i></span>
+                      </button>
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button  type="button" class="btn btn-primary btn-save">Save Advice</button>
+                </div>
+            </div>
+         </div>
+      </div>
+     
+      <!-- ================= All Modal  End========================= -->
+      </div>
+      <!-- ================= container fluid end========================= -->
+   </body>
+</html>
+<!-- <script>
+   $(document).ready(function() {
+     $("[data-toggle=popover]").popover({
+       trigger: 'focus',
+       placement: "bottom",
+       html: true,
+       content: function() {
+         var anchorText = $(this).text();
+         $('#popover-content').find('input[id=txtContent]').attr('value', anchorText);
+         return $('#popover-content').html();
+       }
+     });
+   });
+</script> -->
+<script>
+   $(document).ready(function(){
+     $(".nav-tabs a").click(function(){
+       $(this).tab('show');
+     });
+   });
+
+
+   function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
