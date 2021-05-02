@@ -115,7 +115,7 @@
                <div class="nav_div">
                   <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
                      <!-- <img src="../niramoy/image/logo.png" width="30px" height="30px"  alt="Niramoy"> -->
-                     <button type="button" id="sidebarCollapse" class="btn btn-success">
+                     <button type="button" id="sidebarCollapse" class="btn btn-success btn-sm">
                      <i class="fa fa-align-left"></i>
                      <span></span>
                      </button>
@@ -150,7 +150,7 @@
                               </span>
                            </li>
                            <li class="nav-item">
-                              <button class="btn btn-sm btn-outline-light my-auto">
+                              <button class="btn  btn-outline-light my-auto">
                               <span class="spinner-grow spinner-grow-sm"></span>
                               Buy subscription!
                               </button>
@@ -400,10 +400,10 @@
                      </div>
                      <!-- <hr class="bg-secondary my-0 shadow"> -->
                      <!-- prescription board -->
-                     <div class="container-fluid ">
-                        <div class="row scroll_main_body scroll_details prescription-body">
+                     <div class="container-fluid px-0">
+                        <div class="rowmodmain scroll_main_body scroll_details prescription-body">
                            <!-- ============first column==================== -->
-                           <div class="col-md-5 col-sm-12 border-right pt-3 ">
+                           <div class="maincol1 border-right pt-3 px-1">
                               <!-- -------------Chief Complain Start-------------------------------- -->
                               <div class=" mb-4 chief-complain">
                                  <p class="font-weight-bold text-dark mb-2 bg-light p-1 border rounded pointer hoveruline" data-toggle="modal" data-target="#chief_complain" data-dismiss="modal">Chief Complain:
@@ -573,7 +573,7 @@
                            </div>
                            <!-- -----------------------------------Investigation End:----------------------------------------------------------->
                            <!-- ==================2nd Column============================= -->
-                           <div class="col-md-4 col-sm-12 border-right pt-3">
+                           <div class="maincol2 border-right pt-3 px-1">
                               <!-- ----------------------------------------- RX Start:------------------------------------------------------- -->
                               <div class="min-height-30 mb-4 rx">
                                  <p class="font-weight-bold mb-1  bg-light p-1 border rounded pointer hoveruline" data-toggle="modal" data-target="#rx" data-dismiss="modal" >
@@ -655,7 +655,7 @@
                            </div>
                            <!-- ==================2nd Column End============================= -->
                            <!-- ==================3rd Column Start============================= -->
-                           <div class="col-md-3 col-sm-12 pr0 pt-3">
+                           <div class="maincol3 pr0 pt-3 px-1">
                               <!-- --------------------------- Advice  Start:------------------------------------------- -->
                               <div class="max-height-1 mb-4 advice">
                                  <p class="font-weight-bold text-dark mb-2  bg-light p-1 border rounded pointer hoveruline" data-toggle="modal" data-target="#advice" data-dismiss="modal">
@@ -712,8 +712,8 @@
                            </div>
                            <!-- ==================3rd Column End============================= -->
                         </div>
-                        <div class="row">
-                           <div class="col-md-12">
+                        <div class="rowmod1">
+                           <div class="column11">
                               <div class="footer bg-light border-top1" >
                                  <div class=" text-center pt-2 pb-0 border-top">
                                     <div class="btn-group mr-2 mb-2" role="group" aria-label="First group">
@@ -1313,116 +1313,98 @@
                   <div class="modal fade" id="investigation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                      <div class="modal-dialog modal-dialog-centered modal_invest_width">
                         <div  class="modal-content modal_content_backcolor_padding_font">
-                           <div class="modal-header py-2">
-                              <h4 class="modal-title modal_head_name_h2 font-weight-bold">Investigation</h4>
+                           <div class="modal-header bg-alert-secondary p-2">
+                              <h5 class="modal-title text-center font-weight-bold">Investigation
+                              </h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                               </button>
                            </div>
+                           
                            <div class=" modal-body">
-                              <div class="form-group row mb-0">
-                                 <label class="col-sm-3 col-form-label font-weight-bold">Search Investigation:</label>
+
+                              <div class="form-group row mb-2">
+                                 <h5 class="col-sm-4  ">Search Investigation:</h5>
                                  <div class="col-sm-8">
-                                    <div class="input-group input-group-sm">
-                                       <div class="input-group-prepend">
-                                          <div class="input-group-text bg-white border-right-white"><i class="fa fa-search" aria-hidden="true"></i></div>
+                                    <form autocomplete="off">
+                                       <div class="input-group input-group-sm autocomplete" >
+                                          <!-- <div class="input-group-prepend">
+                                             <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                             </div> -->
+                                          <input type="text" class="form-control"  placeholder="Ex: Jaundice" id="myInput" name="myCountry">
+                                          <div class="input-group-append pointer">
+                                             <span class="input-group-text bg-green-theme text-white"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp Add</span>
+                                          </div>
                                        </div>
-                                       <input type="text" class="form-control border-left-white" aria-label="Amount (to the nearest dollar)" placeholder="Example: Nasal polyp">
-                                       <div class="input-group-append pointer">
-                                          <span class="input-group-text bg-primary text-white"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp Add</span>
-                                       </div>
-                                    </div>
-                                    <!-- <span class="hover_class"  >
-                                       <ul class="dd-menu scroll_search_list scroll_details">
-                                        <li>
-                                           <div class="per_list">
-                                             <input class="conditions-check" type="checkbox">
-                                             <label >noman</label>
-                                           </div>
-                                         </li>
-                                         <li>
-                                           <div class="per_list">
-                                             <input class="conditions-check" type="checkbox">
-                                             <label >noman</label>
-                                           </div>
-                                         </li>
-                                         <li>
-                                           <div class="per_list">
-                                             <input class="conditions-check" type="checkbox">
-                                             <label >noman</label>
-                                           </div>
-                                         </li>
-                                         <li>
-                                           <div class="per_list">
-                                             <input class="conditions-check" type="checkbox">
-                                             <label >noman</label>
-                                           </div>
-                                         </li>
-                                          </ul>
-                                         </span> -->
+                                       <small id="emailHelp" class="form-text text-info">Clicking "add" "Investigation" name will be added in your list.</small>
+                                    </form>
                                  </div>
                               </div>
+                              <!-- <p class="mb-0  text-dark font-weight-bold">Test List</p> -->
+
                               <hr>
-                              <div class="form-group investigation_modal back_color" >
+                              <div class="form-group investigation_modal" >
                                  <div class="row ">
-                                    <div class="col-3 border-right">
-                                       <div class=" py-2">
-                                          <p class="font-weight-bold text-center mb-0 pt-2">Test Catagory </p>
-                                       </div>
-                                       <hr>
-                                       <div class="scroll_investigation scroll_details px-2">
-                                          <button class="btn btn-primary btn-sm btn-block" title="Charges of Artificial Organs"  >CT of HBS</button>
-                                          <button class="btn btn-primary btn-sm btn-block overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary btn-sm btn-block overflow" title="Charges of Artificial Organs"  >CAG</button>
-                                          <button class="btn btn-primary btn-sm btn-block overflow" title="Charges of Artificial Organs"  >Charges of Artificial Organsdghdgfhdfgh</button>
-                                          <button class="btn btn-primary btn-sm btn-block overflow" title="Charges of Artificial Organs"  >CT of HBS</button>
-                                          <button class="btn btn-primary btn-sm btn-block overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary btn-sm btn-block overflow" title="Charges of Artificial Organs"  >CAG</button>
-                                          <button class="btn btn-primary btn-sm btn-block overflow" title="Charges of Artificial Organs"  >Charges of Artificial Organsdghdgfhdfgh</button>
+                                    <div class="col-md-3 col-sm-6 border-right">
+                                       <p class="font-weight-bold text-center mb-2 pb-2 border-bottom border-info">Test Catagory </p>
+                                       
+                                       <div class="scroll_investigation scroll_details p-2  rounded">
+                                          <button type="button" class="btn btn-outline-secondary btn-block btn-sm mb-2 mr-2">abdomnal swelling</button>
+                                          <button type="button" class="btn btn-outline-secondary btn-block btn-sm mb-2 mr-2">abdomnal swelling</button>
+                                          <button type="button" class="btn btn-outline-secondary btn-block btn-sm mb-2 mr-2">abdomnal swelling</button>
+                                          <button type="button" class="btn btn-outline-secondary btn-block btn-sm mb-2 mr-2">abdomnal swelling</button>
+                                          <button type="button" class="btn btn-outline-secondary btn-block btn-sm mb-2 mr-2">abdomnal swelling</button>
+                                          <button type="button" class="btn btn-outline-secondary btn-block btn-sm mb-2 mr-2">CAG</button>
+                                          <button type="button" class="btn btn-outline-secondary btn-block btn-sm mb-2 mr-2">abdomnal swelling</button>
+                                          <button type="button" class="btn btn-outline-secondary btn-block btn-sm mb-2 mr-2">Charges of Artificial Organsdghdgfhdfgh</button>
+                                         
                                        </div>
                                     </div>
-                                    <div class="col-9 scroll_details">
-                                       <div class=" py-2">
-                                          <p class="font-weight-bold text-center mb-0 pt-2">Test Catagory </p>
-                                       </div>
-                                       <hr>
-                                       <div style="background-color:whitesmoke" class="scroll_investigation scroll_details">
-                                          <button class="btn btn-primary type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CT of HBS</button>
-                                          <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
-                                          <button class="btn btn-primary  type1_btn btn_width_tst_list margin3 overflow " title="Charges of Artificial Organs"  >USG of Uterus & Adnexae</button>
-                                          <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary  type1_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >USG of Pregnancy Profileggghghghghghg</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CT of HBS</button>
-                                          <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
-                                          <button class="btn btn-primary  type1_btn btn_width_tst_list margin3 overflow " title="Charges of Artificial Organs"  >USG of Uterus & Adnexae</button>
-                                          <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary  type1_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >USG of Pregnancy Profileggghghghghghg</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CT of HBS</button>
-                                          <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
-                                          <button class="btn btn-primary  type1_btn btn_width_tst_list margin3 overflow " title="Charges of Artificial Organs"  >USG of Uterus & Adnexae</button>
-                                          <button class="btn btn-primary  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary  type1_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >USG of Pregnancy Profileggghghghghghg</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
-                                          <button class="btn btn-primary  type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                    <div class="col-md-9 col-sm-6 scroll_details">
+                                       <p class="font-weight-bold text-center mb-2 pb-2 border-bottom border-info">Test Catagory </p>
+
+                                       <div  class="scroll_investigation scroll_details p-2 rounded">
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CT of HBS</button>
+                                          <button class="btn btn-outline-dark btn-sm  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                                          <button class="btn btn-outline-dark btn-sm  type1_btn btn_width_tst_list margin3 overflow " title="Charges of Artificial Organs"  >USG of Uterus & Adnexae</button>
+                                          <button class="btn btn-outline-dark btn-sm type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm type1_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >USG of Pregnancy Profileggghghghghghg</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CT of HBS</button>
+                                          <button class="btn btn-outline-dark btn-sm type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                                          <button class="btn btn-outline-dark btn-sm  type1_btn btn_width_tst_list margin3 overflow " title="Charges of Artificial Organs"  >USG of Uterus & Adnexae</button>
+                                          <button class="btn btn-outline-dark btn-sm type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm type1_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >USG of Pregnancy Profileggghghghghghg</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CT of HBS</button>
+                                          <button class="btn btn-outline-dark btn-sm  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm  type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                                          <button class="btn btn-outline-dark btn-sm  type1_btn btn_width_tst_list margin3 overflow " title="Charges of Artificial Organs"  >USG of Uterus & Adnexae</button>
+                                          <button class="btn btn-outline-dark btn-sm type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm type1_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >USG of Pregnancy Profileggghghghghghg</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CT of HBS</button>
+                                          <button class="btn btn-outline-dark btn-sm type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                                          <button class="btn btn-outline-dark btn-sm  type1_btn btn_width_tst_list margin3 overflow " title="Charges of Artificial Organs"  >USG of Uterus & Adnexae</button>
+                                          <button class="btn btn-outline-dark btn-sm type1_btn btn_width_tst_list  margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >Haemolysin test</button>
+                                          <button class="btn btn-outline-dark btn-sm type1_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >CAG</button>
+                                          <button class="btn btn-outline-dark btn-sm type2_btn btn_width_tst_list margin3  overflow" title="Charges of Artificial Organs"  >USG of Pregnancy Profileggghghghghghg</button>
+                                         
                                        </div>
                                     </div>
                                  </div>
@@ -1437,9 +1419,9 @@
                                  </button>
                               </div>
                            </div>
-                           <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <button  type="button" class="btn btn-primary btn-save">Save Investigation</button>
+                           <div class="modal-footer p-2">
+                              <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                              <button  type="button" class="btn btn-primary btn-sm btn-save">Save Investigation</button>
                            </div>
                         </div>
                      </div>
