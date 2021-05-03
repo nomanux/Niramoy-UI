@@ -2006,7 +2006,6 @@ pre code {
   opacity: 1;
 }
 
-
 .form-control:disabled, .form-control[readonly] {
   background-color: #e9ecef;
   opacity: 1;
@@ -4000,7 +3999,6 @@ tbody.collapse.show {
 .navbar-nav .dropdown-menu {
   position: static;
   float: none;
-  
 }
 
 .navbar-text {
@@ -5501,6 +5499,7 @@ button.close {
 
 .modal-header .close {
   padding: 1rem;
+  margin: -1rem -1rem -1rem auto;
 }
 
 .modal-title {

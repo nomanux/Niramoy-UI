@@ -7,10 +7,11 @@
       <!-- <title>Responsive Navigation Bar - W3jar.Com</title> -->
       <title>Home</title>
       <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="../niramoy/font/font.css">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-      <link rel="stylesheet" href="../niramoy/css/tempusdominus-bootstrap-4.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+     
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -1324,8 +1325,8 @@
                            <div class=" modal-body">
 
                               <div class="form-group row mb-2">
-                                 <h5 class="col-sm-4  ">Search Investigation:</h5>
-                                 <div class="col-sm-8">
+                                 <h5 class="col-sm-3  ">Search Investigation:</h5>
+                                 <div class="col-sm-9">
                                     <form autocomplete="off">
                                        <div class="input-group input-group-sm autocomplete" >
                                           <!-- <div class="input-group-prepend">
@@ -1427,18 +1428,44 @@
                      </div>
                   </div>
                   <!-- -------------------------------------------------Rx: Start------------------------------------------------------------------ -->
-                  <div class="modal fade modal-tall" id="rx" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                     <div class="modal-dialog modal-dialog-centered modal_max_width" role="document">
-                        <div  class="modal-content modal_content_rx_backcolor_padding_font">
-                           <div class="modal-header modal_header_border_margin">
-                              <div class="col-12 modal_col_12_padding_top_left">
-                                 <div class="row rxtop_row_padding_right has-search">
-                                    <h2 class="modal-title modal_head_name_h2 mr-auto" id="exampleModalLabel">Rx</h2>
-                                    <form class="search-form form-group d-inline col-9 rx_padding_left">
-                                       <span class="fa fa-search form-control-feedback"></span>
-                                       <input class=" search-input form-control "  type="text" name="" placeholder="Search or Add Examination">
-                                       <!-- <button class="btn btn-sm search-button" >Add</button> -->
-                                       <span  class="hover_class"  >
+
+
+                  <div class="modal fade" id="rx" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-dialog-centered modal_invest_width">
+                        <div  class="modal-content modal_content_backcolor_padding_font">
+                           <div class="modal-header bg-alert-secondary p-2">
+                              <h5 class="modal-title text-center font-weight-bold">Rx
+                              </h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                           </div>
+                           
+                           <div class=" modal-body">
+
+                              <div class="form-group row mb-2">
+                                 <h5 class="col-sm-2  ">Search Rx:</h5>
+                                 <div class="col-md-2">
+                                    <div class="form-group">
+                                      
+                                       <select class="form-control form-control-sm" id="dp">
+                                         <option>Brand Name</option>
+                                         <option>Generic name</option>
+                                        
+                                       </select>
+                                     </div>
+                                 </div>
+                                 <div class="col-sm-6">
+                                    <form  class="search-form">
+                                       <div class="input-group input-group-sm" >
+                                       
+                                          <input type="text" class="form-control search-input"  placeholder="Ex: Jaundice"  name="myCountry">
+                                          <div class="input-group-append pointer">
+                                             <span class="input-group-text bg-green-theme text-white"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp Add</span>
+                                          </div>
+                                        
+                                       </div>
+                                       <span  class="position-absolute d-none"  >
                                           <ul   class="dd-menu scroll_search_list scroll_details"   >
                                              <!-- <li class="per_list ">
                                                 <input id="1" class="conditions-check" type="checkbox">
@@ -1448,31 +1475,31 @@
                                                   <span><font class="check_medicine">Check Me</font></span>
                                                 </label>
                                                 </li> -->
-                                             <li class="per_list overflow" style="width: 602px;">
+                                             <li class="per_list overflow" >
                                                 <label class="checkbox">
                                                 <input type="checkbox" />
                                                 <span title="Title here"><font class="check_medicine ">Check Me</font></span>
                                                 </label>
                                              </li>
-                                             <li class="per_list overflow" style="width: 602px;">
+                                             <li class="per_list overflow" >
                                                 <label class="checkbox">
                                                 <input type="checkbox" />
                                                 <span title="Title here"><font class="check_medicine ">Check Me</font></span>
                                                 </label>
                                              </li>
-                                             <li class="per_list overflow" style="width: 602px;">
+                                             <li class="per_list overflow" >
                                                 <label class="checkbox">
                                                 <input type="checkbox" />
                                                 <span title="Title here"><font class="check_medicine ">Check Me</font></span>
                                                 </label>
                                              </li>
-                                             <li class="per_list overflow" style="width: 602px;">
+                                             <li class="per_list overflow" >
                                                 <label class="checkbox">
                                                 <input type="checkbox" />
                                                 <span title="Title here"><font class="check_medicine ">Check Me</font></span>
                                                 </label>
                                              </li>
-                                             <li class="per_list overflow" style="width: 602px;">
+                                             <li class="per_list overflow" >
                                                 <label class="checkbox">
                                                 <input type="checkbox" />
                                                 <span title="Title here"><font class="check_medicine ">Check Me</font></span>
@@ -1496,20 +1523,276 @@
                                              </li>
                                           </ul>
                                        </span>
+                                       <small id="emailHelp" class="form-text text-info">Clicking "add" medicine name will be added in your list.</small>
                                     </form>
-                                    <div class=" d-inline brand_selector" >
-                                       <select class="form-control medicine_form_schedule4 d-inline h35 w100 name_selector">
-                                          <option>Brand Name</option>
-                                          <option>Generic Name</option>
-                                       </select>
+                                 </div>
+                                
+                              </div>
+
+                              <p class="mb-0  text-dark font-weight-bold">Recent Medicine</p>
+
+                              <hr class="mt-1">
+                             
+                              
+
+                              <div class="  form-group  chief_complain_modal2  scroll_details" >
+                                 <nav class=" width_100_white_back">
+                                    <div class="nav nav-tabs catagory_select margin_bottom" id="nav-tab" role="tablist">
+                                       <a class="nav-item nav-link active custom_a brand_generic_name" id="nav-brand-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Brand Name</a>
+                                       <a class="nav-item nav-link brand_generic_name" id="nav-generic-tab " data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false" >Generic Name</a>
+                                    </div>
+                                 </nav>
+                                 <div class="tab-content scroll_details scroll_medicine_list_item_board medicine_suggestion" id="nav-tabContent">
+                                    <div class=" tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-brand-tab">
+                                       <div class=" padding_left">
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Cap. Sabitar 24 mg+26 mg </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Pas. Apsol 50 mg/gm </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Syr. Nystat 100000 unit/ml </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Cap. Sabitar 24 mg+26 mg </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Cap. Sabitar 24 mg+26 mg </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Pas. Apsol 50 mg/gm </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Syr. Nystat 100000 unit/ml </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Cap. Sabitar 24 mg+26 mg </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Cap. Sabitar 24 mg+26 mg </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Pas. Apsol 50 mg/gm </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Syr. Nystat 100000 unit/ml </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Cap. Sabitar 24 mg+26 mg </button>
+                                         
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-generic-tab">
+                                       <div class=" scroll_chief_complain2 scroll_details padding_left">
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Cap. Sabitar 24 mg+26 mg </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Pas. Apsol 50 mg/gm </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Syr. Nystat 100000 unit/ml </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Cap. Sabitar 24 mg+26 mg </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Cap. Sabitar 24 mg+26 mg </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Pas. Apsol 50 mg/gm </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Syr. Nystat 100000 unit/ml </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Cap. Sabitar 24 mg+26 mg </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Cap. Sabitar 24 mg+26 mg </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Pas. Apsol 50 mg/gm </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Syr. Nystat 100000 unit/ml </button>
+                                          <button type="button" class="btn btn-outline-dark btn-sm   btn_min_width mb-1">Cap. Sabitar 24 mg+26 mg </button>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
-                              <button    type="button button-round" class="close cross" data-dismiss="modal" aria-label="Close">
+
+                              <div class="scroll_medication selected_medicine_list_board scroll_details medicine_selected modal-body ">
+                                 <!-- ----------------------------------------------------------------------------------------- -->
+                                 <table class="table table-sm table-bordered rounded ">
+                                    <tr class="back_color" >
+                                       <td class="w-30" rowspan="2">
+                                          1. &nbsp;Tab. Napa 500 mg
+                                       </td>
+                                       <td rowspan="2" class="w-20">
+                                          <div class="input-group input-group-sm mb-2">
+                                             <div class="input-group-prepend">
+                                               <label class="input-group-text" for="inputGroupSelect01">Schedule</label>
+                                             </div>
+                                             <select class="custom-select custom-select-sm fsize-100" id="inputGroupSelect01">
+                                               <option selected value="3">3</option>
+                                               <option value="4">4</option>
+                                               <option value="5">5</option>
+                                             </select>
+                                           </div>
+
+                                           <div>
+                                             <input class="form-control form-control-sm  d-inline edit_width2 mr_bt4" type="number"  value="0" name="quantity" min="0" max="9"> + <input class="form-control form-control-sm   d-inline edit_width2 mr_bt4" type="number"  value="0" name="quantity" min="0" max="9"> + <input class="form-control form-control-sm   d-inline edit_width2 mr_bt4" type="number"  value="0" name="quantity" min="0" max="9"> + <input class="form-control form-control-sm  d-inline edit_width2 mr_bt4" type="number"  value="0" name="quantity" min="0" max="9">
+                                           </div>
+                                       </td>
+                                       <td rowspan="2"  class="w-20" >
+
+                                          <div class="input-group input-group-sm mb-2" >
+                                             <input type="text" class="form-control form-control-sm" placeholder="Search or Add direction">
+                                             <div class="input-group-append">
+                                               <button class="btn btn-secondary" type="button">+</button>
+                                             </div>
+                                           </div>
+                                           <span  class="position-absolute d-none"  >
+                                             <ul   class="dd-menu1 scroll_search_list_advice scroll_details"   >
+                                                <li class="per_list1" >
+                                                   <label  >noman</label>
+                                                </li>
+                                                <li class="per_list1">
+                                                   <label  >noman</label>
+                                                </li>
+                                                <li class="per_list1">
+                                                   <label  >noman</label>
+                                                </li>
+                                                <li class="per_list1">
+                                                   <label  >noman</label>
+                                                </li>
+                                                <li class="per_list1">
+                                                   <label  >noman</label>
+                                                </li>
+                                                <li class="per_list1">
+                                                   <label  >noman</label>
+                                                </li>
+                                                <li class="per_list1">
+                                                   <label  >noman</label>
+                                                </li>
+                                                <li class="per_list1">
+                                                   <label  >noman</label>
+                                                </li>
+                                                <li class="per_list1">
+                                                   <label  >noman</label>
+                                                </li>
+                                             </ul>
+                                          </span>
+                                          <button type="button" class="btn btn-primary select_direction_btn3 edit_margin2">Before Meal</button><button type="button" class="btn btn-primary select_direction_btn3 edit_margin2">After Meal</button>
+
+
+                                          
+                                          <!-- <button class="btn btn-sm btn-primary"><i class="fa fa-plus" aria-hidden="true"></i></button> -->
+                                       
+                                       </td>
+                                       <td class="w-15">
+                                         
+
+                                          <label class="font-weight-bold">Duration</label>
+                                          <div class="d-flex justify-content-start">
+                                            
+                                             <input class="form-control form-control-sm w-40" type="number"  value="0" name="quantity" > 
+                                             <select class="form-control form-control-sm w-60">
+                                                <option>Days</option>
+                                                <option>Week</option>
+                                                <option>Month</option>
+                                                <option>Year</option>
+                                             </select>
+                                            </div>
+                                       </td>
+                                       <td class="  width_1">
+                                          <i   class="fa fa-times delete_icon cross_icon"></i>
+                                       </td>
+                                    </tr>
+                                   
+                                 </table>
+                              </div>
+                             
+                           </div>
+                           <div class="modal-footer p-2">
+                              <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                              <button  type="button" class="btn btn-primary btn-sm btn-save">Save Investigation</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+
+
+                  <div class="modal fade modal-tall" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-dialog-centered modal_max_width" role="document">
+                        <div  class="modal-content">
+                           <div class="modal-header bg-alert-secondary p-2">
+                              <h5 class="modal-title text-center font-weight-bold">Investigation
+                              </h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                               </button>
                            </div>
+
+                           
                            <div class=" modal-body  modal_body_padding_bottom">
+
+
+
+                              <div class="form-group row mb-2">
+                                 <h5 class="col-sm-3  ">Search Medicine:</h5>
+                                 <div class="col-sm-6">
+                                    <form  class="search-form">
+                                       <div class="input-group input-group-sm" >
+                                       
+                                          <input type="text" class="form-control search-input"  placeholder="Ex: Jaundice"  name="myCountry">
+                                          <div class="input-group-append pointer">
+                                             <span class="input-group-text bg-green-theme text-white"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp Add</span>
+                                          </div>
+                                        
+                                       </div>
+                                       <span  class="position-absolute"  >
+                                          <ul   class="dd-menu scroll_search_list scroll_details"   >
+                                             <!-- <li class="per_list ">
+                                                <input id="1" class="conditions-check" type="checkbox">
+                                                <label for="1" > <span> Noman</span> </label>
+                                                <label class="checkbox">
+                                                  <input type="checkbox" />
+                                                  <span><font class="check_medicine">Check Me</font></span>
+                                                </label>
+                                                </li> -->
+                                             <li class="per_list overflow" >
+                                                <label class="checkbox">
+                                                <input type="checkbox" />
+                                                <span title="Title here"><font class="check_medicine ">Check Me</font></span>
+                                                </label>
+                                             </li>
+                                             <li class="per_list overflow" >
+                                                <label class="checkbox">
+                                                <input type="checkbox" />
+                                                <span title="Title here"><font class="check_medicine ">Check Me</font></span>
+                                                </label>
+                                             </li>
+                                             <li class="per_list overflow" >
+                                                <label class="checkbox">
+                                                <input type="checkbox" />
+                                                <span title="Title here"><font class="check_medicine ">Check Me</font></span>
+                                                </label>
+                                             </li>
+                                             <li class="per_list overflow" >
+                                                <label class="checkbox">
+                                                <input type="checkbox" />
+                                                <span title="Title here"><font class="check_medicine ">Check Me</font></span>
+                                                </label>
+                                             </li>
+                                             <li class="per_list overflow" >
+                                                <label class="checkbox">
+                                                <input type="checkbox" />
+                                                <span title="Title here"><font class="check_medicine ">Check Me</font></span>
+                                                </label>
+                                             </li>
+                                             <li class="per_list">
+                                                <input id="3" class="conditions-check" type="checkbox">
+                                                <label for="3" >noman</label>
+                                             </li>
+                                             <li class="per_list">
+                                                <input id="4" class="conditions-check" type="checkbox">
+                                                <label for="4" >noman</label>
+                                             </li>
+                                             <li class="per_list">
+                                                <input id="5" class="conditions-check" type="checkbox">
+                                                <label for="5" >noman</label>
+                                             </li>
+                                             <li class="per_list">
+                                                <input id="6" class="conditions-check" type="checkbox">
+                                                <label for="6" >noman</label>
+                                             </li>
+                                          </ul>
+                                       </span>
+                                       <small id="emailHelp" class="form-text text-info">Clicking "add" "Investigation" name will be added in your list.</small>
+                                    </form>
+                                 </div>
+                                 <div class="col-md-3">
+                                    <div class="form-group">
+                                      
+                                       <select class="form-control form-height" id="dp">
+                                         <option>Brand Name</option>
+                                         <option>Generic name</option>
+                                        
+                                       </select>
+                                     </div>
+                                 </div>
+                              </div>
+
+
+
+                             
+
+
+
+
+
                               <div class="  form-group  chief_complain_modal2 back_color scroll_details" >
                                  <nav class=" width_100_white_back">
                                     <div class="nav nav-tabs catagory_select margin_bottom" id="nav-tab" role="tablist">
@@ -1520,50 +1803,50 @@
                                  <div class="tab-content scroll_details scroll_medicine_list_item_board medicine_suggestion" id="nav-tabContent">
                                     <div class=" tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-brand-tab">
                                        <div class=" padding_left">
-                                          <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Cap. Sabitar 24 mg+26 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Pas. Apsol 50 mg/gm </button>
-                                          <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Syr. Nystat 100000 unit/ml </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Carvista 6.25 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Cap. Amitripati 500mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Barbit 30mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Inj. Acerux 250 mg/vial</button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
-                                          <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Cap. Sabitar 24 mg+26 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Pas. Apsol 50 mg/gm </button>
-                                          <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Syr. Nystat 100000 unit/ml </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Carvista 6.25 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Cap. Amitripati 500mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Barbit 30mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Inj. Acerux 250 mg/vial</button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
+                                          <button type="button" class="btn btn-outline-dark  type1_btn ">Cap. Sabitar 24 mg+26 mg </button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Pas. Apsol 50 mg/gm </button>
+                                          <button type="button" class="btn btn-outline-dark  type1_btn ">Syr. Nystat 100000 unit/ml </button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Tab. Napa 500 mg </button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Tab. Carvista 6.25 mg </button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Cap. Amitripati 500mg </button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Tab. Barbit 30mg </button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Inj. Acerux 250 mg/vial</button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Tab. Napa 500 mg </button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Tab. Napa 500 mg </button>
+                                          <button type="button" class="btn btn-outline-dark  type1_btn ">Cap. Sabitar 24 mg+26 mg </button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Pas. Apsol 50 mg/gm </button>
+                                          <button type="button" class="btn btn-outline-dark  type1_btn ">Syr. Nystat 100000 unit/ml </button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Tab. Napa 500 mg </button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Tab. Carvista 6.25 mg </button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Cap. Amitripati 500mg </button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Tab. Barbit 30mg </button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Inj. Acerux 250 mg/vial</button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Tab. Napa 500 mg </button>
+                                          <button type="button" class="btn btn-outline-dark  type2_btn ">Tab. Napa 500 mg </button>
                                        </div>
                                     </div>
                                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-generic-tab">
                                        <div class=" scroll_chief_complain2 scroll_details padding_left">
-                                          <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Cap. Sabitar 24 mg+26 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Pas. Apsol 50 mg/gm </button>
-                                          <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Syr. Nystat 100000 unit/ml </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Carvista 6.25 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Cap. Amitripati 500mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Barbit 30mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Inj. Acerux 250 mg/vial</button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
-                                          <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Cap. Sabitar 24 mg+26 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Pas. Apsol 50 mg/gm </button>
-                                          <button type="button" class="btn btn-primary  type1_btn btn_min_width  edit_margin1">Syr. Nystat 100000 unit/ml </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Carvista 6.25 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Cap. Amitripati 500mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Barbit 30mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Inj. Acerux 250 mg/vial</button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
-                                          <button type="button" class="btn btn-primary  type2_btn btn_min_width  edit_margin1">Tab. Napa 500 mg </button>
+                                          <button type="button" class="btn btn-primary  type1_btn ">Cap. Sabitar 24 mg+26 mg </button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Pas. Apsol 50 mg/gm </button>
+                                          <button type="button" class="btn btn-primary  type1_btn ">Syr. Nystat 100000 unit/ml </button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Tab. Napa 500 mg </button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Tab. Carvista 6.25 mg </button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Cap. Amitripati 500mg </button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Tab. Barbit 30mg </button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Inj. Acerux 250 mg/vial</button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Tab. Napa 500 mg </button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Tab. Napa 500 mg </button>
+                                          <button type="button" class="btn btn-primary  type1_btn ">Cap. Sabitar 24 mg+26 mg </button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Pas. Apsol 50 mg/gm </button>
+                                          <button type="button" class="btn btn-primary  type1_btn ">Syr. Nystat 100000 unit/ml </button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Tab. Napa 500 mg </button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Tab. Carvista 6.25 mg </button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Cap. Amitripati 500mg </button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Tab. Barbit 30mg </button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Inj. Acerux 250 mg/vial</button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Tab. Napa 500 mg </button>
+                                          <button type="button" class="btn btn-primary  type2_btn ">Tab. Napa 500 mg </button>
                                        </div>
                                     </div>
                                  </div>
