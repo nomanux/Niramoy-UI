@@ -390,6 +390,88 @@ input[type=submit] {
 }
 
 /* -------------------------------- */
+
+
+.chip {
+  display: inline-block;
+    padding: 0 7px;
+    height: 21px;
+    font-size: 11px;
+    line-height: 20px;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    margin-right: .25em;
+    margin-bottom: .25em;
+}
+
+.mname{
+  width: 4vw;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+ 
+}
+
+.closebtn {
+  padding-left: 8px;
+    color: #ff2323c7;
+    font-weight: bold;
+    float: right;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+  color: #c21313c7;
+}
+
+
+
+/* abbr[data-title] {
+  position: relative;
+  text-decoration: underline dotted; 
+}
+abbr[data-title]:hover::after,
+abbr[data-title]:focus::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+  width: auto;
+  white-space: nowrap;
+  background: #04AA6D;
+  color: #fff;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.4);
+  font-size: 10px;
+  padding: 3px 4px;
+} */
+
+
+
+.scrollmedicine_list{
+
+  max-height: 55vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+.scrollplist{
+  max-height: 64vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+.paymentinfoscroll{
+  max-height: 20vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
+
 .scroll_search_list_advice {
   max-height: 89px;
   overflow-y: scroll;
@@ -400,17 +482,7 @@ input[type=submit] {
   z-index: 1;
 }
 .dd-menu1 {
-  /* position: absolute;
-  top: -2px;
-  left: 0px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 0;
-  margin: 2px 0 0 0;
-  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
-  background-color: #ffffff;
-  list-style-type: none;
-  min-width: 216px!important; */
+  
   position: absolute;
   top: -5px;
   left: 0px;
@@ -425,16 +497,58 @@ input[type=submit] {
   /* max-width: 2160px!important; */
 }
 
-
-
 .dd-menu1 li {
  
   white-space: nowrap;
 }
-
 .dd-menu1 li:hover {
   background-color: #f7f7f7;
 }
+
+
+/* dd-menu2 */
+
+.dd-menu2 {
+  
+  position: absolute;
+  /* top: -5px; */
+  left: 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  list-style-type: none;
+  width: 21vw!important;
+  z-index: 999;
+  /* max-width: 2160px!important; */
+}
+
+.dd-menu2 li {
+ 
+  white-space: nowrap;
+}
+.dd-menu2 li:hover {
+  background-color: #f7f7f7;
+}
+
+
+/* .downarrow{
+  position: relative;
+  display: inline-block;
+}
+.downarrow::before{
+  position: absolute;
+  content: "\23F7";
+  top: -2px;
+   right: 0px;
+  height: 20px;
+  width: 20px;
+} */
+
+
+
 #myselect-container {
   position:relative;
   height:10px;
@@ -1562,6 +1676,11 @@ tr.spaceUnder>th {
   }
   */
 
+  .patientselect.table.table th.table td {
+    padding: 0.10rem!important;
+    
+}
+
   .medicine_select.table.table th.table td {
     padding: 0.30rem!important;
     
@@ -2325,14 +2444,14 @@ input:checked + label {
   border: 1px solid rgb(209, 210, 211)!important;
   }
   .chief_complain_modal{
-  padding-left: 1%;
-  padding-top: 1%;
+  /* padding-left: 1%;
+  padding-top: 1%; */
   background-color: #e4e5e623;
   overflow-x: hidden;
-  border: 1px solid #00ADEE;
-  border-radius: 5px;
-  padding-bottom: 0%;
-  box-shadow: 0px 1px 8px #00ADEE4b;
+  /* border: 1px solid #00ADEE; */
+  /* border-radius: 5px;
+  padding-bottom: 0%; */
+  /* box-shadow: 0px 1px 8px #00ADEE4b; */
   }
 
 
@@ -3951,7 +4070,7 @@ a[data-toggle="collapse"] {
      overflow-x: hidden;
      }
 
-.form-control-sm{
+.form-control-sm_mod{
   height: calc(1.1em + .5rem + 2px)!important;
   line-height: 1.1!important;
 }
