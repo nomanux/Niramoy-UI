@@ -2284,7 +2284,7 @@ input:checked + label {
 
   @media only screen and (min-width: 1367px) {
     .scroll_main_body {
-      height: 62vh;
+      height: 73vh!important;
      
       }
 
