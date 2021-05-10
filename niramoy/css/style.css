@@ -2280,6 +2280,15 @@ input:checked + label {
     overflow-y: scroll;
     overflow-x: hidden;
   }
+
+
+  @media only screen and (min-width: 1367px) {
+    .scroll_main_body {
+      height: 62vh;
+     
+      }
+
+  }
   .scroll_main_body {
     height: 56vh;
     overflow: scroll;
@@ -3980,8 +3989,7 @@ h1.head {
   margin-right: 10px;
 }
 
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
+#sidebar ul li.active {
   color: #1c4a64;
   background: #ffffff;
 }
