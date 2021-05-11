@@ -76,7 +76,7 @@
                      </a>
                </li>
                <li>
-                  <a href="#">
+                  <a href="../niramoy/patient-profile.html">
                      <i class="fa fa-wheelchair-alt"></i>
                      Patient Profile
                      </a>
@@ -157,7 +157,7 @@
                               <li class="nav-item">
                               <a class="nav-link" href="../niramoy/medicine.html">Add medicine</a>
                               </li> -->
-                           <li class="nav-item ml-auto">
+                           <li class="nav-item ml-auto fsize-85">
                               <!-- <span class="nav-link text-light font-weight-bold">Version 1.0.1
                                  <span class="badge badge-dark">121 Days left</span>
                                  </span> -->
@@ -167,8 +167,8 @@
                               </span>
                            </li>
                            <li class="nav-item">
-                              <button class="btn  btn-outline-light my-auto">
-                              <span class="spinner-grow spinner-grow-sm"></span>
+                              <button class="btn  btn-outline-warning btn-sm mt-2 mb-0">
+                                 <i class="fa fa-refresh fa-spin mr-1"></i>
                               Buy subscription!
                               </button>
                               <!-- <button class="btn btn-sm btn-outline-light my-auto" type="button">
@@ -176,13 +176,25 @@
                                  Buy subscription!
                                  </button> -->
                            </li>
-                           <li class="nav-item dropdown active">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle  fa-lg"></i>  Dr. Tayeba habib Siza </a>
+                           <li class="nav-item dropdown active mr-0 border-left border-light">
+                              <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle  fa-lg"></i>  Dr. Tayeba habib Siza </a>
                               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                                  <a class="dropdown-item" href="#">Edit Profile</a>
                                  <a class="dropdown-item" href="#">Logout</a>
-                                 <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-                              </div>
+                                 <a class="dropdown-item" href="#">Something else here</a>
+                              </div> -->
+
+
+                              <div class="btn-group pt-1">
+                                 <button class="btn btn-dark btn-sm dropdown-toggle py-2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-user-circle  fa-lg"></i>  Dr. Tayeba habib Siza 
+                                 </button>
+                                 <div class="dropdown-menu dropdown-menu-smmod dropdown-menu-right">
+                                    <a class="dropdown-item" href="../niramoy/doctor-profile.html">Edit Profile</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                    <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                                 </div>
+                               </div>
                            </li>
                         </ul>
                      </div>
@@ -218,24 +230,24 @@
                                  <button class="btn btn-primary btn-xs" type="button" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-pencil-square-o text-light"></i> New Patient
                                  </button>
                               </div>
-                              <div class="p-2 ">
+                              <!-- <div class="p-2 ">
                                  <div class="dropdown show ">
                                     <a class="text-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Last Visited
+                                    <small>Last Visited</small>
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <div class="dropdown-menu dropdown-menu-smmod" aria-labelledby="dropdownMenuLink">
                                        <a class="dropdown-item py-0" href="#">01-09-2019</a>
                                        <a class="dropdown-item py-0" href="#">12-02-2019</a>
                                        <a class="dropdown-item py-0" href="#">05-01-2019</a>
                                     </div>
                                  </div>
-                              </div>
+                              </div> -->
                               <div class="p-2">
                                  <div class="dropdown">
                                     <button type="button" class="btn btn-xs btn-secondary dropdown-toggle" data-toggle="dropdown">
                                     <i class="fa fa-file mr-1" aria-hidden="true"></i>Prescription Template
                                     </button>
-                                    <div class="dropdown-menu dropdown-menu-right">
+                                    <div class="dropdown-menu dropdown-menu-smmod dropdown-menu-right">
                                        <a class="dropdown-item" href="#">Fever</a>
                                        <a class="dropdown-item" href="#">Dengue</a>
                                        <a class="dropdown-item" href="#">Fever</a>
@@ -248,7 +260,7 @@
                                     <button type="button" class="btn btn-xs btn-warning dropdown-toggle" data-toggle="dropdown">
                                     <i class="fa fa-file mr-1" aria-hidden="true"></i> Draft Prescription
                                     </button>
-                                    <div class="dropdown-menu dropdown-menu-right ">
+                                    <div class="dropdown-menu dropdown-menu-smmod dropdown-menu-right ">
                                        <a class="dropdown-item" href="#">Fever</a>
                                        <a class="dropdown-item" href="#">Dengue</a>
                                        <a class="dropdown-item" href="#">Fever</a>
@@ -354,7 +366,7 @@
                            <div class="col text-right">
                               <div class="text-right">
                                  <h6 class=" font-weight-bold text-theme-green my-0">Asst. Prf. Dr.Tayeba Habib Shiza</h6>
-                                 <p class="text-dark  fsize-75 mb-1"><font class=""> Cardiologist </font> MBBS(BD), MCPS, FCPS(UK) <br>
+                                 <p class="text-dark  fsize-75 mb-1"><font class="font-weight-bold"> Cardiologist </font> MBBS(BD), MCPS, FCPS(UK) <br>
                                     Shaheed Suhrawardy medical college, Dhaka
                                  </p>
                                  <!-- <small class="text-muted "><font class=""> Cardiologist </font> MBBS(BD), MCPS, FCPS(UK) <br>
@@ -424,7 +436,7 @@
                                        </td>
                                        <td class="font-weight-bold"> <font  class="fw-400">Age:               </font> &nbsp; 45</td>
                                        <td class="font-weight-bold"> <font  class="fw-400">Phone :            </font> +8801710000000</td>
-                                       <td class="font-weight-bold"> <font  class="fw-400">Date :             </font> 01.07.2019</td>
+                                       <td class="font-weight-bold font-italic"> <font  class="fw-400">Last visit :             </font> <a href="#" class="text-dark"><u>01.07.2019</u></a></td>
                                        <!-- <td class="font-weight-bold"> <font  class="info_left">Prescription No.:  </font> 1029</td> -->
                                     </tr>
                                  </tbody>
@@ -501,7 +513,7 @@
                                           </td>
                                        </tr>
                                        <tr >
-                                          <td class=" pb-3 pl-0 pt-0">
+                                          <td class=" pl-0 pt-0">
                                            <div class="pl-1">
                                              <small class="mr-3"><font class="font-weight-bold body_text">HT:</font> <font class=" fsize-100 body_text ">5’9” ft</font></small>&nbsp;
                                             
@@ -753,7 +765,9 @@
 
                                     <div class="btn-group mb-2" role="group" aria-label="Button group with nested dropdown">
                                        <button type="button" class="btn btn-outline-primary btn-sm"><i class="fa fa-eye mr-1" aria-hidden="true"></i>Preview</button>
-                                       <button type="button" class="btn btn-secondary btn-sm"><i class="fa fa-file mr-1" aria-hidden="true"></i> Save as Template</button>
+                                       
+                                       <button type="button" data-toggle="modal" data-target="#savetemplete" class="btn btn-secondary btn-sm"><i class="fa fa-file mr-1" aria-hidden="true"></i> Save as Template</button>
+
                                        <button type="button" class="btn btn-warning btn-sm">&nbsp;  <i class="fa fa-bookmark" aria-hidden="true"></i> Save as Draft &nbsp;</button>
                                        <button type="button" class="btn btn-dark btn-sm"><i class="fa fa-spinner" aria-hidden="true"></i> Complete Prescription &nbsp;</button>
                                        <button type="button" class="btn btn-primary btn-save-print btn-sm"><i class="fa fa-print mr-1" aria-hidden="true"></i>Print</button>
@@ -2721,6 +2735,42 @@
                         <div class="modal-footer p-2">
                            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
                            <button  type="button" class="btn btn-primary btn-sm btn-save">Save Investigation</button>
+                        </div>
+                       
+                     </div>
+                     
+                  </div>
+               </div>
+
+
+
+               <!--------------------------------------- save templete ------------------------>
+               <div class="modal fade " id="savetemplete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-sm">
+                     <div  class="modal-content fsize-90">
+                        <div class="modal-header bg-alert-secondary p-2">
+                           <h5 class="modal-title text-center font-weight-bold">Templete Name
+                           </h5>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                           </button>
+                        </div>
+                        
+                        <div class=" modal-body">
+                           <div class="form-group">
+                             
+                              <input type="text" class="form-control form-control-sm"  placeholder="Ex. Fever">
+                              <small  class="form-text text-primary">Find this format in "<i class="fa fa-file mx-1" aria-hidden="true"></i>Prescription Templete "</small>
+                            </div>
+
+                         
+                           <!-- <p class="mb-0  text-dark font-weight-bold">Test List</p> -->
+
+                           
+                        </div>
+                        <div class="modal-footer p-2">
+                           <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                           <button  type="button" class="btn btn-primary btn-sm btn-save">Save</button>
                         </div>
                        
                      </div>

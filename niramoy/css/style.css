@@ -2280,7 +2280,12 @@ input:checked + label {
     overflow-y: scroll;
     overflow-x: hidden;
   }
-
+.dropdown-menu-smmod{
+  font-size: .75rem!important;
+}
+.dropdown-menu-smmod > .dropdown-item{
+  padding: 0.25rem .75rem;
+}
 
   @media only screen and (min-width: 1367px) {
     .scroll_main_body {
@@ -2289,8 +2294,99 @@ input:checked + label {
       }
 
   }
+#calendar table {
+	border-spacing: 2px;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+a, a:hover {
+    text-decoration: none;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.dprofile  label{
+  font-weight: bold;
+  margin-bottom: .25em;
+}
+
+
+.dprofile  .form-group{
+  margin-bottom: .50em;
+}
+
+
+
+
+
+
+
+.parentrow{
+  font-size: 1.2em!important;
+  font-style: italic;
+  cursor: pointer;
+  font-weight: 500;
+  
+ 
+}
+
+
+/* .parentrow:after{
+  content: '\002B';
+    color: red;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+} */
+
+
+#table_detail {
+  background-color: #fafafa;
+ 
+ 
+  border-collapse: collapse;
+ 
+}
+
+
+#table_detail .hidden_row {
+  background-color: white!important;
+  display: none;
+  margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .scroll_main_body {
-    height: 56vh;
+    height: 64vh;
     overflow: scroll;
     overflow-x: hidden;
     }

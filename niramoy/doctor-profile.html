@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- <title>Responsive Navigation Bar - W3jar.Com</title> -->
+      <title>Home</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="../niramoy/font/font.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link rel="stylesheet" href="../niramoy/css/tempusdominus-bootstrap-4.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+         <script src="../niramoy/js/tempusdominus-bootstrap-4.js"></script> -->
+      <script src="../niramoy/js/tempusdominus-bootstrap-4.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <!-- Sidebar  -->
+         <nav id="sidebar" class="active">
+            <div class="sidebar-header">
+               <h3>Niramoy Healthtech</h3>
+               <strong>
+               <img src="../niramoy/image/logo.png" width="40px" height="40px"  alt="Niramoy">
+               </strong>
+            </div>
+            <ul class="list-unstyled components ulside">
+               <!-- <li class="active">
+                  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                      <i class="fa fa-home"></i>
+                      Home
+                  </a>
+                  <ul class="collapse list-unstyled " id="homeSubmenu">
+                      <li>
+                          <a href="#">Home 1</a>
+                      </li>
+                      <li>
+                          <a href="#">Home 2</a>
+                      </li>
+                      <li>
+                          <a href="#">Home 3</a>
+                      </li>
+                  </ul>
+                  </li> -->
+               <li >
+                  <a href="../niramoy/homepage.html" >
+                  <i class="fa fa-file-powerpoint-o"></i>
+                  Prescription
+                  </a>
+                  <!-- <ul class="collapse list-unstyled " id="homeSubmenu">
+                     <li>
+                         <a href="#">Home 1</a>
+                     </li>
+                     <li>
+                         <a href="#">Home 2</a>
+                     </li>
+                     <li>
+                         <a href="#">Home 3</a>
+                     </li>
+                     </ul> -->
+               </li>
+               <li  class="active">
+                  <a href="../niramoy/apppointment.html">
+                  <i class="fa fa-calendar"></i>
+                  Appointments
+                  </a>
+               </li>
+
+               <li>
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                    Search
+                    </a>
+               </li>
+               <li>
+                <a href="#">
+                    <i class="fa fa-wheelchair-alt"></i>
+                    Patient Profile
+                    </a>
+               </li>
+               <li>
+                <a href="../niramoy/medicine.html">
+                    <i class="fa fa-adjust"></i>
+                    Medicine
+                    </a>
+               </li>
+               <li>
+                <a href="../niramoy/patient-list.html">
+                    <i class="fa fa-adjust"></i>
+                    Patient List
+                    </a>
+               </li>
+               <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fa fa-copy"></i>
+                    Settings
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                       <li>
+                          <a href="#">Page 1</a>
+                       </li>
+                       <li>
+                          <a href="#">Page 2</a>
+                       </li>
+                       <li>
+                          <a href="#">Page 3</a>
+                       </li>
+                    </ul>
+               </li>
+               <li>
+                  <a href="#">
+                  <i class="fa fa-image"></i>
+                  Portfolio
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                  <i class="fas fa-question"></i>
+                  FAQ
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                  <i class="fa fa-paper-plane"></i>
+                  Contact
+                  </a>
+               </li>
+            </ul>
+            <ul class="list-unstyled CTAs">
+               <li>
+                  <a href="" class="download">Download source</a>
+               </li>
+               <li>
+                  <a href="" class="article">Back to article</a>
+               </li>
+            </ul>
+         </nav>
+         <!-- Page Content  -->
+         <div id="content" class="w-100">
+            <div>
+                 <!-- =========navbar start==========   -->
+                 <div class="topnav">
+                    <!-- =========navbar start==========   -->
+                    <div class="nav_div">
+                       <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+                          <!-- <img src="../niramoy/image/logo.png" width="30px" height="30px"  alt="Niramoy"> -->
+                          <button type="button" id="sidebarCollapse" class="btn btn-success btn-sm">
+                          <i class="fa fa-align-left"></i>
+                          <span></span>
+                          </button>
+                          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <i class="fas fa-align-justify"></i>
+                          </button>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                             <ul class="navbar-nav w-100">
+                                <li class="nav-item active">
+                                   <!-- <a class="nav-link" href="../niramoy/homepage.html"> Prescription  <span class="sr-only">(current)</span></a> -->
+                                   <p class="nav-link" id="currentTime"></p>
+                                </li>
+                                <!-- <li class="nav-item">
+                                   <a class="nav-link" href="../niramoy/appointment.html">Appointment</a>
+                                   </li>
+                                   <li class="nav-item">
+                                   <a href="../niramoy/user.html" class="nav-link">Patient Profile</a>
+                                   </li>
+                                   <li class="nav-item">
+                                   <a class="nav-link" href="../niramoy/medicine.html">Add medicine</a>
+                                   </li> -->
+                                <li class="nav-item ml-auto fsize-85">
+                                   <!-- <span class="nav-link text-light font-weight-bold">Version 1.0.1
+                                      <span class="badge badge-dark">121 Days left</span>
+                                      </span> -->
+                                   <span class="nav-link text-light font-weight-bold">Trial Version
+                                   <span class="badge badge-dark">180
+                                   Days left</span>
+                                   </span>
+                                </li>
+                                <li class="nav-item">
+                                   <button class="btn  btn-outline-warning btn-sm mt-2 mb-0">
+                                      <i class="fa fa-refresh fa-spin mr-1"></i>
+                                   Buy subscription!
+                                   </button>
+                                   <!-- <button class="btn btn-sm btn-outline-light my-auto" type="button">
+                                      <i class="fa fa-cog fa-spin"></i>
+                                      Buy subscription!
+                                      </button> -->
+                                </li>
+                                <li class="nav-item dropdown active mr-0 border-left border-light">
+                                   <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle  fa-lg"></i>  Dr. Tayeba habib Siza </a>
+                                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                      <a class="dropdown-item" href="#">Edit Profile</a>
+                                      <a class="dropdown-item" href="#">Logout</a>
+                                      <a class="dropdown-item" href="#">Something else here</a>
+                                   </div> -->
+     
+     
+                                   <div class="btn-group pt-1">
+                                      <button class="btn btn-dark btn-sm dropdown-toggle py-2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                         <i class="fa fa-user-circle  fa-lg"></i>  Dr. Tayeba habib Siza 
+                                      </button>
+                                      <div class="dropdown-menu dropdown-menu-smmod dropdown-menu-right">
+                                         <a class="dropdown-item" href="../niramoy/doctor-profile.html">Edit Profile</a>
+                                         <a class="dropdown-item" href="#">Logout</a>
+                                         <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                                      </div>
+                                    </div>
+                                </li>
+                             </ul>
+                          </div>
+                       </nav>
+                    </div>
+                    <!-- =========navbar end========== -->
+                 </div>
+ <!-- =========navbar end========== -->
+            </div>
+            <div>
+                <div class="container-fluid f-85">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <h4 class="p-2  bg-light border rounded m-3 ">Doctor profile</h4>
+                      </div>
+                   </div>
+
+                <div class="row">
+                    <div class="col-md-8">
+
+                       <div>
+                        <form class="dprofile">
+
+                           <div class="form-row">
+                              <div class="form-group col">
+                                 <label >Title</label>
+                                 <select class="form-control form-control-sm">
+                                    <option selected>Asst. Professor</option>
+                                    <option>Professor</option>
+                                    <option>Consultant</option>
+                                  </select>
+                               </div>
+                              <div class="form-group col">
+                                 <label >Name</label>
+                                 <input type="text" class="form-control form-control-sm" placeholder="Ex. Md Abdul Aziz">
+                               </div>
+                              
+                           </div>
+                           
+                           <div class="form-group ">
+                              <label >Degree</label>
+                              <textarea class="form-control form-control-sm" rows="1" placeholder="MBBS, FCPS"></textarea>
+                            </div>
+
+                            <div class="form-row">
+                              <div class="form-group col">
+                                 <label >Speciality Area</label>
+                                 <select class="form-control form-control-sm">
+                                    <option selected>Anesthesiology</option>
+                                    <option>Dermatology</option>
+                                    <option>Diagnostic radiology</option>
+                                    <option>Neurology</option>
+                                  </select>
+                               </div>
+                               <div class="form-group col">
+                                 <label >Sub-speciality Area</label>
+                                 <select class="form-control form-control-sm">
+                                    <option selected>Anesthesiology</option>
+                                    <option>Dermatology</option>
+                                    <option>Diagnostic radiology</option>
+                                    <option>Neurology</option>
+                                  </select>
+                               </div>
+                           </div>
+                           <div class="form-row">
+                              <div class="form-group col">
+                                 <label >Your phone no.</label>
+                                 <input type="text" class="form-control form-control-sm" placeholder="Ex. Md Abdul Aziz">
+                               </div>
+                               <div class="form-group col">
+                                 <label >BMDC Reg. no</label>
+                                 <input type="text" class="form-control form-control-sm"  placeholder="Ex. Md Abdul Aziz">
+                               </div>
+                           </div>
+                           <div class="form-row">
+                              <div class="form-group col">
+                                 <label >Hospital name</label>
+                                 <input type="text" class="form-control form-control-sm" placeholder="Ex. Md Abdul Aziz">
+                               </div>
+                               <div class="form-group col">
+                                 <label >Authority name</label>
+                                 <input type="text" class="form-control form-control-sm"  placeholder="Ex. Md Abdul Aziz">
+                               </div>
+                           </div>
+
+                           <div class="form-row">
+                              <div class="form-group col">
+                                 <label >Address</label>
+                                 <textarea class="form-control form-control-sm"  rows="2"></textarea>
+                               </div>
+                               <div class="form-group col">
+                                 <label >Chamber Address</label>
+                                 <textarea class="form-control form-control-sm"  rows="2"></textarea>
+                               </div>
+                           </div>
+                           <button type="button" class="btn btn-success  p-1 px-4">Save</button>
+                           
+                           
+                         </form>
+                       </div>
+                    </div>
+                </div>
+                 </div>
+            </div>
+           
+         </div>
+      </div>
+      <!-- ================= container fluid end========================= -->
+   </body>
+</html>
+
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<!-- <script src="/niramoy/js/main.js"></script> -->
+
+
+
+<!-- left toggle navbar -->
+<script>
+  $(document).ready(function () {
+     $(".nav-tabs a").click(function () {
+        $(this).tab('show');
+     });
+  });
+</script>
+<script>
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+      $('#sidebarCollapse').on('click', function () {
+          $('#sidebar').toggleClass('active');
+      });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
