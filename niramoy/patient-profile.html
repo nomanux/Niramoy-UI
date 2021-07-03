@@ -17,6 +17,7 @@
          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
          <script src="../niramoy/js/tempusdominus-bootstrap-4.js"></script> -->
       <script src="../niramoy/js/tempusdominus-bootstrap-4.js"></script>
+      
    </head>
    <body>
       <div class="wrapper">
@@ -76,8 +77,8 @@
                     Search
                     </a>
                </li>
-               <li>
-                <a href="#">
+               <li  class="active">
+                <a href="../niramoy/patient-profile.html">
                     <i class="fa fa-wheelchair-alt"></i>
                     Patient Profile
                     </a>
@@ -88,7 +89,7 @@
                     Medicine
                     </a>
                </li>
-               <li class="active">
+               <li>
                 <a href="../niramoy/patient-list.html">
                     <i class="fa fa-adjust"></i>
                     Patient List
@@ -141,75 +142,94 @@
          </nav>
          <!-- Page Content  -->
          <div id="content" class="w-100">
-            <div>
-                 <!-- =========navbar start==========   -->
- <div class="nav_div">
-    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
-       <!-- <img src="../niramoy/image/logo.png" width="30px" height="30px"  alt="Niramoy"> -->
-
-       <button type="button" id="sidebarCollapse" class="btn btn-success">
-          <i class="fa fa-align-left"></i>
-          <span></span>
-      </button>
-      <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-align-justify"></i>
-      </button>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav w-100">
-             <!-- <li class="nav-item active">
-                <a class="nav-link" href="../niramoy/homepage.html"> Prescription  <span class="sr-only">(current)</span></a>
-             </li> -->
-             <!-- <li class="nav-item">
-                <a class="nav-link" href="../niramoy/appointment.html">Appointment</a>
-             </li>
-             <li class="nav-item">
-                <a href="../niramoy/user.html" class="nav-link">Patient Profile</a>
-             </li>
-             <li class="nav-item">
-                <a class="nav-link" href="../niramoy/medicine.html">Add medicine</a>
-             </li> -->
-             <li class="nav-item ml-auto">
-                <!-- <span class="nav-link text-light font-weight-bold">Version 1.0.1
-                   <span class="badge badge-dark">121 Days left</span>
-                   </span> -->
-                <span class="nav-link text-light font-weight-bold">Trial Version
-                <span class="badge badge-dark">180
-                Days left</span>
-                </span>
-             </li>
-             <li class="nav-item">
-                <button class="btn btn-sm btn-outline-light my-auto">
-                <span class="spinner-grow spinner-grow-sm"></span>
-                Buy subscription!
-                </button>
-                <!-- <button class="btn btn-sm btn-outline-light my-auto" type="button">
-                   <i class="fa fa-cog fa-spin"></i>
-                   Buy subscription!
-                   </button> -->
-             </li>
-             <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle  fa-lg"></i>  Dr. Tayeba habib Siza </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                   <a class="dropdown-item" href="#">Edit Profile</a>
-                   <a class="dropdown-item" href="#">Logout</a>
-                   <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-                </div>
-             </li>
-          </ul>
-       </div>
-    </nav>
- </div>
- <!-- =========navbar end========== -->
+            <div class="topnav">
+               <!-- =========navbar start==========   -->
+               <div class="nav_div">
+                  <nav class="navbar  navbar-expand-lg navbar-dark bg-dark py-0">
+                     <!-- <img src="../niramoy/image/logo.png" width="30px" height="30px"  alt="Niramoy"> -->
+                     <button type="button" id="sidebarCollapse" class="btn btn-success btn-sm">
+                        <i class="fa fa-align-left"></i>
+                        <span></span>
+                     </button>
+                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                     </button>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav w-100">
+                           <li class="nav-item active">
+                              <!-- <a class="nav-link" href="../niramoy/homepage.html"> Prescription  <span class="sr-only">(current)</span></a> -->
+                              <p class="nav-link" id="currentTime"></p>
+                           </li>
+                           <!-- <li class="nav-item">
+                                 <a class="nav-link" href="../niramoy/appointment.html">Appointment</a>
+                                 </li>
+                                 <li class="nav-item">
+                                 <a href="../niramoy/user.html" class="nav-link">Patient Profile</a>
+                                 </li>
+                                 <li class="nav-item">
+                                 <a class="nav-link" href="../niramoy/medicine.html">Add medicine</a>
+                                 </li> -->
+                           <li class="nav-item ml-auto fsize-85">
+                              <!-- <span class="nav-link text-light font-weight-bold">Version 1.0.1
+                                    <span class="badge badge-dark">121 Days left</span>
+                                    </span> -->
+                              <span class="nav-link text-light font-weight-bold">Trial Version
+                                 <span class="badge badge-dark">180
+                                    Days left</span>
+                              </span>
+                           </li>
+                           <li class="nav-item">
+                              <button class="btn  btn-outline-warning btn-sm mt-2 mb-0">
+                                 <i class="fa fa-refresh fa-spin mr-1"></i>
+                                 Buy subscription!
+                              </button>
+   
+   
+   
+                              <!-- <button class="btn btn-sm btn-outline-light my-auto" type="button">
+                                    <i class="fa fa-cog fa-spin"></i>
+                                    Buy subscription!
+                                    </button> -->
+                           </li>
+                           <li class="nav-item dropdown active mr-0 border-left border-light">
+                              <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle  fa-lg"></i>  Dr. Tayeba habib Siza </a>
+                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Edit Profile</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                 </div> -->
+   
+   
+                              <div class="btn-group pt-1">
+                                 <button class="btn btn-dark btn-sm dropdown-toggle py-2" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-user-circle  fa-lg"></i> Dr. Tayeba habib Siza
+                                 </button>
+                                 <div class="dropdown-menu dropdown-menu-smmod dropdown-menu-right">
+                                    <a class="dropdown-item" href="../niramoy/doctor-profile.html">Edit Profile</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                    <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               <!-- =========navbar end========== -->
             </div>
-            <div>
-                <div class="container-fluid f-85">
+            <div class="px-2">
+                <div class="container-fluid f-85 ">
                     <div class="row pt-2">
                        <div class="col-md-12">
                           <div class="card  ">
-                             <div class="card-header py-1">
+                             <div class="card-header py-1 bg-white">
                 
                                 <div class="d-flex">
                                     <div class=" mr-auto" style="width: 30em;">
@@ -229,7 +249,7 @@
                                
                              </div>
                              <div class="card-body  table_container px-2 scroll_details scroll_board p-2 bg_mod">
-                                <div class="pt-2">
+                                <div>
                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
                                       <li class="nav-item">
                                          <a class="nav-link active" id="immunizations" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Test Report </a>
@@ -258,7 +278,7 @@
                                            <div class="pt-2 scroll_patient_list scroll_details">
                                             
 
-                                            <div id="wrapper">
+                                            <div id="wrapper" class="px-2">
 
                                               <table class="table table-sm table-bordered "   id="table_detail">
                                           
@@ -374,7 +394,7 @@
                                        <div class="row">
                                           <div class="col-md-12">
                                             
-                                         <div class="pt-2 mt-2 scroll_patient_list scroll_details">
+                                         <div class="pt-2 mt-2 px-2 scroll_patient_list scroll_details">
                                         <div class="table-responsive">
                                             <table class="table my_appointment_table  table-bordered table-sm">
                                                 <thead class="thead-light" >

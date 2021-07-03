@@ -6,7 +6,9 @@
   /* font-family: 'Roboto', sans-serif; */
 
   }
-
+  body {
+    letter-spacing: -.00278rem; 
+}
   
 :root {
 
@@ -371,7 +373,7 @@ input[type=submit] {
   min-width: 508px!important;
 }
 
-.dd-input + .dd-menu {
+/* .dd-input + .dd-menu {
   display: none;
 } 
 
@@ -387,7 +389,7 @@ input[type=submit] {
 
 .dd-menu li:hover {
   background-color: #f7f7f7;
-}
+} */
 
 /* -------------------------------- */
 
@@ -675,7 +677,7 @@ abbr[data-title]:focus::after {
   width: 20%!important;
   }
   .pointer{
-  cursor: pointer;
+  cursor: pointer!important;
   }
   .edit_margin31{
   margin-bottom: 0rem!important;
@@ -995,48 +997,24 @@ tr.spaceUnder>th {
 }
  */
 
+ .dropdownmod {
+  position: relative;
+  width: 200px;
+  }
 
+  .dropdownmod select {
+  width: 100%;
+  }
 
-.pointer{
-  cursor: pointer!important;
-}
+  .dropdownmod > * {
+  box-sizing: border-box;
+  height: 1.5em;
+  }
 
-.select-style2 {
- 
-  border:1px solid #777;
-     width: 40px;
-     border-radius: 3px;
-     overflow: hidden;
-     background: #FFF url("../00_common/menu/menu_arrow_down_active.png") no-repeat 95% 50%;
-   float:left;
- 
- }
- 
- .select-style2 select {  
-  
- font-size:15px;
- color:#777;
-     padding: 5px 8px 0px 5px;
-     width: 130%;
-     border: none;
-     box-shadow: none;
-     background: transparent;
-     background-image: none;
-     -webkit-appearance: none;
-     
- }
- 
- .select-style2{
- }
- 
- .select-style2 select:focus {
-     outline: none;  
- }
- 
- .select-style2 select option {
-   padding:3px;
- 
- }
+  .dropdownmod input {
+  position: absolute;
+  width: calc(100% - 20px);
+  }
 
 
 
@@ -2087,7 +2065,7 @@ tr.spaceUnder>th {
     }
 
 .per_list{
-  padding: 11px 20px 5px 20px;
+  padding: 1vh 1vw;
   /* margin-top: 2px; */
     border-bottom: 1px solid #f1f1f1;
 }
@@ -2194,7 +2172,7 @@ input:checked + label {
     left: 705px!important;
   }
   .hover_class{
-    position: absolute;
+    position: relative;
     z-index: 1;
   }
   .scroll_search_list {
@@ -4302,8 +4280,25 @@ a[data-toggle="collapse"] {
 }
 
 
+.doctor-details p{
+  line-height: 13px;
+}
 
 
+
+
+.facross {
+  background-color: rgb(255, 210, 210);
+  color: rgb(255, 65, 65);
+  padding: .20em;
+  border-radius: 4px;
+  margin-left: .5em;
+}
+
+.facross:hover{
+  background-color: rgb(255, 102, 102);
+  color: rgb(161, 28, 28);
+}
 
 
 
